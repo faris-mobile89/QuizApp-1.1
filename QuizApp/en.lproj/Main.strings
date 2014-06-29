@@ -1,0 +1,111 @@
+
+/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "0Tn-ag-mQk"; */
+"0Tn-ag-mQk.normalTitle" = "انهاء الاختبار";
+
+/* Class = "IBUIButton"; normalTitle = "اختبار    تحديد   الشخصيه"; ObjectID = "4Hh-H5-4se"; */
+"4Hh-H5-4se.normalTitle" = "اختبار    تحديد   الشخصيه";
+
+/* Class = "IBUILabel"; text = "تنطبق أحيانا "; ObjectID = "6bf-lu-hq7"; */
+"6bf-lu-hq7.text" = "تنطبق أحيانا ";
+
+/* Class = "IBUIButton"; normalTitle = "ابدأ الاختبار"; ObjectID = "AO2-9U-mYW"; */
+"AO2-9U-mYW.normalTitle" = "ابدأ الاختبار";
+
+/* Class = "IBUIButton"; normalTitle = "التالي"; ObjectID = "BGS-f0-Dov"; */
+"BGS-f0-Dov.normalTitle" = "التالي";
+
+/* Class = "IBUITextField"; placeholder = "يوم"; ObjectID = "KA2-5X-BzM"; */
+"KA2-5X-BzM.placeholder" = "يوم";
+
+/* Class = "IBUILabel"; text = "السؤال رقم :"; ObjectID = "LzT-RP-tW3"; */
+"LzT-RP-tW3.text" = "السؤال رقم :";
+
+/* Class = "IBUISegmentedControl"; PLV-lw-Nh7.segmentTitles[0] = "انثى"; ObjectID = "PLV-lw-Nh7"; */
+"PLV-lw-Nh7.segmentTitles[0]" = "انثى";
+
+/* Class = "IBUISegmentedControl"; PLV-lw-Nh7.segmentTitles[1] = "ذكر"; ObjectID = "PLV-lw-Nh7"; */
+"PLV-lw-Nh7.segmentTitles[1]" = "ذكر";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "PyW-By-a53"; */
+"PyW-By-a53.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "السؤال رقم :"; ObjectID = "Rsm-7s-1RT"; */
+"Rsm-7s-1RT.text" = "السؤال رقم :";
+
+/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "SaL-Rp-GRc"; */
+"SaL-Rp-GRc.normalTitle" = "انهاء الاختبار";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "Tdq-aV-HED"; */
+"Tdq-aV-HED.normalTitle" = "Button";
+
+/* Class = "IBUITextField"; placeholder = "بريد الكتروني"; ObjectID = "Wx2-nl-JIg"; */
+"Wx2-nl-JIg.placeholder" = "بريد الكتروني";
+
+/* Class = "IBUILabel"; text = "تاريخ الميلاد"; ObjectID = "XYh-f1-RXY"; */
+"XYh-f1-RXY.text" = "تاريخ الميلاد";
+
+/* Class = "IBUIButton"; normalTitle = "التالي"; ObjectID = "YTv-mC-Zq1"; */
+"YTv-mC-Zq1.normalTitle" = "التالي";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ZcV-IW-UZo"; */
+"ZcV-IW-UZo.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "bdE-3I-kjV"; */
+"bdE-3I-kjV.normalTitle" = "انهاء الاختبار";
+
+/* Class = "IBUITextField"; placeholder = "رقم الهاتف"; ObjectID = "cRm-JG-dJx"; */
+"cRm-JG-dJx.placeholder" = "رقم الهاتف";
+
+/* Class = "IBUITextField"; placeholder = "سنه"; ObjectID = "dJI-wY-PN3"; */
+"dJI-wY-PN3.placeholder" = "سنه";
+
+/* Class = "IBUITextField"; placeholder = "الاسم الرباعي"; ObjectID = "eCl-dY-A8V"; */
+"eCl-dY-A8V.placeholder" = "الاسم الرباعي";
+
+/* Class = "IBUITextField"; placeholder = "شهر"; ObjectID = "eZh-Z5-ik2"; */
+"eZh-Z5-ik2.placeholder" = "شهر";
+
+/* Class = "IBUITextView"; text = "اختبار MBTI لتحديد الشخصية\n\nحتى تكون نتيجة تحليل شخصيتك دقيقة يجب أن تلاحظ التالي : \n\n•\tمعظم الأسئلة تتحدث عن جو الدراسة وفي محيط الجامعة . لذا إن لم تكن / تكونين طالبة، بإمكانك تغيير السؤال إلى تخيل لما قد يحدث في مكان العمل، أو ما قد يحدث في حياتك العامة .\n\n•\tهذه الأسئلة إفتراضية، فعندما تجيب عليها تخيل أنها تتحدث عن واقعة لا ترتبط بدرجات أو عقوبات ومكافآت. مثلاً تخيل أن الأسئلة عن الدراسة لهواية خاصة بك وليست عن الدراسة لتحقيق شهادة.\n\n•\tتذكر أن تختار الإجابة التي تعكس ما تعتقده أنت وليس ما تريد أن يعتقده الناس عنك .\n\n•\tالإجابات يجب أن تكون صريحة لا تحاول أن تخادع الإختبار فأنت لا تخادع إلا نفسك.\n\n\n\nالاختبار يتكون من 38 سؤال ، اختر السؤال الذي تعتقد أنه يقارب لتفكيرك أو تصرفك في الموقف المذكور.\n"; ObjectID = "f0X-cg-qnH"; */
+"f0X-cg-qnH.text" = "اختبار MBTI لتحديد الشخصية\n\nحتى تكون نتيجة تحليل شخصيتك دقيقة يجب أن تلاحظ التالي : \n\n•\tمعظم الأسئلة تتحدث عن جو الدراسة وفي محيط الجامعة . لذا إن لم تكن / تكونين طالبة، بإمكانك تغيير السؤال إلى تخيل لما قد يحدث في مكان العمل، أو ما قد يحدث في حياتك العامة .\n\n•\tهذه الأسئلة إفتراضية، فعندما تجيب عليها تخيل أنها تتحدث عن واقعة لا ترتبط بدرجات أو عقوبات ومكافآت. مثلاً تخيل أن الأسئلة عن الدراسة لهواية خاصة بك وليست عن الدراسة لتحقيق شهادة.\n\n•\tتذكر أن تختار الإجابة التي تعكس ما تعتقده أنت وليس ما تريد أن يعتقده الناس عنك .\n\n•\tالإجابات يجب أن تكون صريحة لا تحاول أن تخادع الإختبار فأنت لا تخادع إلا نفسك.\n\n\n\nالاختبار يتكون من 38 سؤال ، اختر السؤال الذي تعتقد أنه يقارب لتفكيرك أو تصرفك في الموقف المذكور.\n";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "fix-yS-Cdm"; */
+"fix-yS-Cdm.text" = "Label";
+
+/* Class = "IBUILabel"; text = "لا تنطبق عليٌ "; ObjectID = "hVN-JQ-db4"; */
+"hVN-JQ-db4.text" = "لا تنطبق عليٌ ";
+
+/* Class = "IBUILabel"; text = "تنطبق دائما "; ObjectID = "ibJ-N4-FDS"; */
+"ibJ-N4-FDS.text" = "تنطبق دائما ";
+
+/* Class = "IBUIButton"; normalTitle = "تسجيل"; ObjectID = "jzU-Xb-jhK"; */
+"jzU-Xb-jhK.normalTitle" = "تسجيل";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "l1g-Yl-y8B"; */
+"l1g-Yl-y8B.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "mJM-El-y4M"; */
+"mJM-El-y4M.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "ابدأ الاختبار"; ObjectID = "ny6-Cw-9xf"; */
+"ny6-Cw-9xf.normalTitle" = "ابدأ الاختبار";
+
+/* Class = "IBUILabel"; text = "٠"; ObjectID = "oEI-XX-gQp"; */
+"oEI-XX-gQp.text" = "٠";
+
+/* Class = "IBUITextField"; placeholder = "الجنسيه"; ObjectID = "pHU-EP-IZE"; */
+"pHU-EP-IZE.placeholder" = "الجنسيه";
+
+/* Class = "IBUIButton"; normalTitle = "خروج"; ObjectID = "tdl-aH-deE"; */
+"tdl-aH-deE.normalTitle" = "خروج";
+
+/* Class = "IBUIButton"; normalTitle = "اختبار  اختيار  التخصص"; ObjectID = "u5O-Lt-sMa"; */
+"u5O-Lt-sMa.normalTitle" = "اختبار  اختيار  التخصص";
+
+/* Class = "IBUITextField"; placeholder = "العنوان"; ObjectID = "uFj-ix-cAq"; */
+"uFj-ix-cAq.placeholder" = "العنوان";
+
+/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "wS1-j7-a1l"; */
+"wS1-j7-a1l.normalTitle" = "انهاء الاختبار";
+
+/* Class = "IBUITextView"; text = "اختبار التخصص الجامعي\n\nوضع هذا الاختبار للكشف عن استعداداتك وهو مؤشر يستند عليه لتحديد التخصص الأنسب لك، لذا نأمل منك الإجابة على ما سيرد بكل صدق ودقة حتى نتمكن من الوصول لنتيجة تصب في مصلحتك. وتذكر.... أنه لا يوجد إجابة صحيحة وأخرى خاطئة!"; ObjectID = "ydp-Hn-l58"; */
+"ydp-Hn-l58.text" = "اختبار التخصص الجامعي\n\nوضع هذا الاختبار للكشف عن استعداداتك وهو مؤشر يستند عليه لتحديد التخصص الأنسب لك، لذا نأمل منك الإجابة على ما سيرد بكل صدق ودقة حتى نتمكن من الوصول لنتيجة تصب في مصلحتك. وتذكر.... أنه لا يوجد إجابة صحيحة وأخرى خاطئة!";

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل الدراسة او العمل لوحدي.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>أنا أفضل الدراسة او العمل مع غيري أو ضمن فريق.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أدرس مع غيري، معظم استيعابي يكون من خلال الإستماع لأفكار وشروحات الآخرين.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أدرس مع غيري، معظم استيعابي يكون من خلال مشاركتي واستعراض ما فهمته</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أدرس أو أعمل مع غيري، أرائي لا أطرحها حتى أفكر فيها جيداً.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أدرس او أعمل مع غيري، يكون طرحي لآرائي سريعاً وفور تفكيري فيها، حتى وإن لم أتأكد من صحتها.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أبدأ العمل على مشروع ما ، أنا أفكر فيه وأحلله جيداً قبل أن أبدأ العمل لاحقاً .</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أبدأ العمل على مشروع ما، أنا أباشر العمل أولاً ثم أفكر بالنتائج.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أدرس أو أعمل لوحدي ، يمكني البقاء لأوقات طويلة دون التوقف للراحة ويضايقني جداً لو قاطعني أحدهم.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أعمل أو ادرس لوحدي ، أنا احتاج لعدة أوقات أتوقف فيها للراحة ولا اتضايق لو قاطعني أحد أثناء دراستي.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عند سؤالي عن شيء، فأنا اقوم بدعوة الطرف الاخر للتعرف على نظرتي حيال الشئ وذلك من خلال وصف وشرح ما أعرفه عنه</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عند سؤالي عن شيء، فأنا أقوم بمحاولة اقناع الطرف الآخر بوجهة نظري من خلال اتباع اسلوب الاثبات والعرض لما اعرفه.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أحب أن أضع لنفسي قواعد وطموحات خاصة بي .</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>أنا أحب أن أعرف ما الذي يتوقع الناس مني انجازه .</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أكون في حفلة أو نشاط اجتماعي، فأنا اتفاعل مع قلة من الناس، معظمهم ممن اعرفهم مسبقاً.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أكون في حفلة أو نشاط اجتماعي، فأنا اتفاعل مع الكثير من الناس، من ضمنهم الغرباء.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أذهب الى مناسبة اجتماعية أو احتفال، فأنا في الغالب انصرف مبكراً، واشعر بأني منهك من التعب والضجر.</string>
+		<key>Q1Tag</key>
+		<string>I</string>
+		<key>Q2Tag</key>
+		<string>E</string>
+		<key>Q2</key>
+		<string>عندما أذهب الى مناسبة اجتماعية أو احتفال، فأنا في الغالب أبقى حتى ساعة متأخرة، وحتى بعد انصرافي اشعر بالطاقة لا تزال في جسدي.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا لا أتضايق من الخلاصات والمواضيع والحقائق المعقدة في حياتي أو دراستي.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا لا أتضايق من الروتين في حياتي وفي دراستي.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>لا تضايقني الحقائق التي تشذ عن القوانين المعروفة، بل أجدها تستحق الدراسة لأتعلم منها.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أتضايق بشدة عندما أتواجه مع حقائق تشذ عن القوانين التي تعلمتها أو درستها.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أتضجر بشدة عندما يتم تعليمي أو شرح المادة بكل التفاصيل وخطوات العمل.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أتضايق عندما يترك جزء من المادة أو طريق العمل لمخيلتي.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن أتعلم أشياء كثيرة، وسأتقن ما يجب علي اتقانه عند حاجتي لذلك.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن اتعلم مهارات قليلة على أن أتقنها بشكل جيد .</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أتعلم أفضل عندما أفكر بالاحتمالات وأتخيل وأحاول أن أخمن ماذا سيحصل عندما تتغير المعطيات.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا أتعلم أفضل عندما أجرب الشيء لأرى ما الذي سيحصل .</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن أتعلم أشياء جديدة وتحتاج مني للتفكير واستخدام مخيلتي.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن أتعلم أشياء مفيدة ومبنية على قواعد ونظريات قائمة وصلبة، سبق لي تجربتها.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>غالباً ما أثق في حدسي في قراراتي وإجابتي على الأسئلة ، فلا أحتاج لمراجعة نفسي في غالب الأوقات .</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>قبل أن أجاوب على سؤال أو أصدر قراراً غالبا ما أراجع نفسي وأفكر فيما إن كان مصيباً أم لا .</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا دائماً أؤكد وأفضل التخيل على المشاهدة .</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا دائماً أؤكد وأفضل المشاهدة على التخيل.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا غالباً أشعر بالضجر عندما يلتزم المدرس أو المدير بجدوله أعماله بدقة لمدة طويلة.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا أشعر بالراحة غالباً عندما يلتزم المدرس أو مديري بجدول أعماله الدقيق دون أن يغيره.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أميل للاشخاص صاحبي الخيال الواسع.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا أميل للاشخاص الواقعيين.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أقوم بعمل روتيني، فأنا أنجزه بطريقتي الخاصة.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>عندما أقوم بعمل روتيني، فأنا أنجزه بالطريقة التقليدية.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل أن أعرف إن كان ما سأدرسه سيفيد البشرية والمجتمع من حولي.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>أنا أفضل أن أعرف السبب المنطقي والذي يدعوني لدراسة مادة أو العمل على مشروع.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل مدرس محترم وخلوق على المدرس المرتب والمنظم في شرحه.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>أنا أفضل مدرس مرتب ومنظم في شرحه على المدرس المحترم والخلوق.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل مجموعة دراسة أو عمل، يكون أعضاءها متفقين فيما بينهم ويعلمون بتناغم .</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>أنا أفضل مجموعة دراسة أو عمل ، تكون فيها النقاشات حادة للوصول إلى فهم أفضل للمادة .</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن اتعلم ما أحبه أولاً.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>أفضل أن أتعلم ما يجب علي تعلمه أولاً.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل طريقة لتصحيح خطأ زميلك هو في أن تحاول أن تتفهم موقفه، وتتعرف على الأسباب الداعية لما صنع.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>أفضل طريقة لتصحيح خطأ زميلك هو في أن تكون صريحاً حتى لو تسبب ذلك في جرحه.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>يعجبني في نفسي طيبة قلبي وتفهمي للاخرين والاهتمام بهم.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>يعجبني في نفسي معرفتي وقوة رأيي الذي لا يتزعزع.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>القسوة أسوأ من الظلم.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>الظلم أسوأ من القسوة.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أواجه مشكلة ويتوجب علي اتخاذ قرار، فإن أكثر ما يؤثر فيَ هو المشاعر من خلال النظر في حال الاطراف ذات العلاقة.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>عندما أواجه مشكلة ويتوجب علي اتخاذ قرار، فإن أكثر ما يؤثر فيَ هو الاقناع من خلال الحقائق والبراهين.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أتناقش أو أتفاوض، فأنا أشعر بالراحة أكثرعند الوصول الى اتفاق أو انتهاء النقاش.</string>
+		<key>Q1Tag</key>
+		<string>F</string>
+		<key>Q2Tag</key>
+		<string>T</string>
+		<key>Q2</key>
+		<string>عندما أتناقش أو أتفاوض، فأنا أشعر بالراحة أكثر عندما استعرض الحقائق وأتعرف على التفاصيل ذات العلاقة.
+</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل أن أدرس بطريقة مرنة، بحيث استرخي في فترات، ثم اضغط نفسي قبل موعد التسليم.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا أفضل أن أدرس بطريقة مرتبة ومنظمة، بحيث أحاول الموازنة بين العمل والاسترخاء وبالتالي أنهي الاعمال قبل موعدها.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا غالباً ما أقوم بتأجيل الدراسة أو العمل على الواجبات المملة أو التي لا احبها .</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا ألتزم بجدول دراستي حتى وإن كانت المادة التي أدرسها مملة.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>غالباً ما أحاول أن أحصل الدرجة التي تؤهلني للنجاح فقط.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>غالباً ما أحاول أن أعمل لأكون أفضل الطلاب وأحقق أعلى الدرجات.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن أبقى مرناً وأن أتعامل مع ضيق الوقت حال حدوثه.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن أجدول المهمات لأتجنب ضيق الوقت لاحقاً</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن ابحث عن المعلومات حول الموضوع قبل أن أن اعطي الإجابة على السؤال.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن أعطي الإجابات بقدر المعلومات التي أعرفها وفور سؤالي حتى وإن لم أكن متاكداً من صحتها.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل أن أعمل على عدة واجبات ومهمات في نفس الوقت.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن انهي المهمة أو الواجب الذي بيدي قبل أن ابدأ العمل على واجب جديد.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أفضل العمل على واجب أو مهمة معروفة الهدف، ولكن أن تترك طريقة التنفيذ لمخيلتي.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أفضل أن أعمل على واجب أو مهمة مشروحة ومعرّفة بشكل كامل مع ايضاح المطلوب مني عمله </string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>عندما أقوم بالاختيار، فأنا أميل أن أكون متهورا في الغالب.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>عندما أقوم بالاختيار، فأنا غالبا أقوم بتفحص الخيارات بدقة قبل أن أختار.</string>
+	</dict>
+	<dict>
+		<key>Q1</key>
+		<string>أنا أفضل ترك الأشياء تحدث ومن ثم التعامل معها.</string>
+		<key>Q1Tag</key>
+		<string>P</string>
+		<key>Q2Tag</key>
+		<string>J</string>
+		<key>Q2</key>
+		<string>أنا أفضل الترتيب والتخطيط للاشياء قبل حدوثها.</string>
+	</dict>
+</array>
+</plist>

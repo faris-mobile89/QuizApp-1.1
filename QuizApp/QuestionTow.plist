@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أحب مساعدة الآخرين واستمتع بخدمتهم حتى دون مقابل  
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أحب التحدث مع الآخرين عن مشاعري أو مشاعرهم وخصوصياتهم
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>يصفني الناس بأني عاطفي أو حساس أو متسامح
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أنا طالبٌ اجتماعي أحب الاجتماع مع الناس والحديث معهم
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أنا غالباً أبذل أموالي للآخرين وأكرم من حولي 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>لا أحب أن أغضب الآخرين أو أن أخسرهم  حتى ولو أساؤوا لي
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أحب الاستماع لمشاكل الآخرين والسعي لحلها ما استطعت
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أنا غالباً أقدم احتياجات الآخرين على احتياجاتي
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أحب الشعر أو القصص أو النشيد 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أجمل اللحظات هي اللحظات التي أخدم فيها الآخرين
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>أعتبر أن علاقتي الطيبة مع الآخرين هي أعز ما أملك
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>C</string>
+		<key>Question</key>
+		<string>غالباً يصعب عليّ قول ( لا ) عندما يطلب مني الآخرون شيئا ما    
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أحب الرسم أو الخط أو الأعمال الفنية 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أنا طالب عشوائي وغير منظم 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>عند شرائي لجهاز جديد أحاول تشغيله بنفسي دون اللجوء إلى كتيب التعليمات
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>لا أحب كثرة الأنظمة والتعليمات وأشعر أنها تعيقني
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أنا غالباً أتأخر عن مواعيدي 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>يصفني الناس بأني مغامر أو أنني ( أحمل المفاجآت ) 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أتمتع بروح الدعابة والمرح والتي قد توقعني في مشاكل أو إحراجات
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أحب معرفة الخلاصة ( الزبدة ) ولا أحب التفاصيل الدقيقة  
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أحب الأفكار غير العادية والتي قد يسميها الآخرون أفكارا مجنونة
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أحب تغيير جهاز جوالي ولا أحب أن استمر على جهاز واحد فترة طويلة 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أكره الروتين وأحب التغيير دائماً
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>D</string>
+		<key>Question</key>
+		<string>أتحمس لأهدافي وطموحي وأكرس لها وقتي وجهدي كله
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أنا حذر أو حريص أو اهتم بالعواقب كثيراً
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أنا منظم ومرتب ولا أحب الفوضى في أموري وأعمالي
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أنا أحافظ على أغراضي وممتلكاتي
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أنا أنفذ ما يطلب مني بكل دقة
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أشعر بارتياح في أعمال الترتيب أو التنظيم أو التصنيف
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>اهتم بمواعيدي ولا أتأخر عنها إلا نادراً
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>يصفني الناس بأني نظامي أو منضبط
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أحب معرفة  تفاصيل الأعمال التي سأقوم بها أو المكان الذي أكون فيه 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>إذا اشتريت جهازاً جديداً فإني أفضل أن أتبع تعليمات كتيب التشغيل قبل تشغيله
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أحب العمل والتنفيذ أكثر من التفكير والتخطيط
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أفضِّل التعليمات المحددة على أن يترك الأمر بلا تعليمات محددة وواضحة
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>B</string>
+		<key>Question</key>
+		<string>أحل الواجبات المدرسية أولا بأول ولا أحب أن أتأخر في تأديتها
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أنا لا أصدق الأمور ولا أتقبلها إلا بالدليل والبرهان
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>لدي القدرة أو أحب حساب الأرقام والتعامل معها
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أنا لست بخيلاً لكني لا أصرف مالي إلا في شيء أحتاجه ويهمني
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>لدي القدرة على التخطيط لرحلة  أو الإشراف على ميزانية الرحلة 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أنا اتخذ قراري وفقاً للنظام والعقل لا وفقاً للعاطفة والمشاعر
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>لدي قدرة عالية في تحليل الأشياء واستنتاجها ( لماذا حدث ؟ وماذا استنتج ؟ )
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>يصفني الآخرون بأني صريح أو منطقي
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أنا أجيد التعامل مع الآلات أو الحاسب أو التقنية
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أنا متميز أو أحب أو لدي قدرة في مادة الرياضيات
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>يفضل الآخرون أو أفضل أنا أن أكون قائدا أو مسؤولاً عن العمل 
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أمتلك معرفه مميزة بالمواضيع العلمية والتقنية
+</string>
+	</dict>
+	<dict>
+		<key>Part</key>
+		<string>A</string>
+		<key>Question</key>
+		<string>أشعر بأنه يجب أن تنفذ القوانين والعقوبات بحزم وبدون مجاملات
+</string>
+	</dict>
+</array>
+</plist>
