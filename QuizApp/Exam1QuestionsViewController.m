@@ -17,6 +17,7 @@
 @property (nonatomic,strong) NSString *Question1Tag,*Question2Tag,*userAnswerTag;
 @property (assign, nonatomic) BOOL transitionInProgress;
 @property  (nonatomic,strong)  NSString *result;
+@property (weak,nonatomic) NSMutableArray *userAnswerArray;
 @end
 
 @implementation Exam1QuestionsViewController
@@ -25,6 +26,7 @@
 @synthesize result;
 @synthesize QestionOneLable,QuesrionTowLable;
 @synthesize QuestionNumber;
+@synthesize userAnswerArray;
 
 UILabel *label1;
 UILabel *label2;
@@ -43,13 +45,19 @@ NSInteger groupF=0;
 NSInteger groupJ=0;
 NSInteger groupP=0;
 
+int flag_back=0;
+NSString *lastAnswerTag;
+
 
 - (void)viewDidLoad
 {
     [self firstLaod];
+    [_fbtnBack setEnabled:FALSE];
+
     
     [super viewDidLoad];
 }
+
 -(void)viewDidAppear:(BOOL)animated{
  [self firstLaod];
 }
@@ -68,7 +76,7 @@ groupF=0;
 groupJ=0;
 groupP=0;
 result=@"";
-    
+
 }
 
 -(void)firstLaod{
@@ -97,7 +105,7 @@ result=@"";
     Question1Tag = [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q1Tag"];
     Question2Tag = [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q2Tag"];
     QuestionCounter++;
-    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%i",QuestionCounter];
+    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
     userAnswerTag=nil;
 }
 -(NSMutableArray*)LoadData{
@@ -135,7 +143,7 @@ result=@"";
             userAnswerTag=Nil;
             break;
     }
-
+    lastAnswerTag = userAnswerTag;
 }
 
 -(void)addRadio{
@@ -167,16 +175,26 @@ result=@"";
 }
 
 - (IBAction)nextQuestion:(id)sender {
+ 
+    
+    NSLog(@"QustionCounter:%li",(long)QuestionCounter);
+    
+    if (QuestionCounter >= 1 && flag_back != 0) {
+        [_fbtnBack setEnabled:TRUE];
+        NSLog(@"must enable");
+    }
+    else{
+        
+        [_fbtnBack setEnabled:FALSE];
+    }
     
     
     if (userAnswerTag==nil) {
         UIAlertView * alert= [[UIAlertView alloc]initWithTitle:@"خطأ" message:@"يرجى اختيار اجابة من الخيارات ! " delegate:self cancelButtonTitle:nil otherButtonTitles:@"موافق", nil];
         [alert show];
-        
     }else
     
     if(QuestionCounter < [arrayOfdata count]){
-        
         
         [self addRadio];
         
@@ -191,7 +209,11 @@ result=@"";
 
         userAnswerTag=nil;
         QuestionCounter++;
-        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%i",QuestionCounter];
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
+        [_fbtnBack setEnabled:TRUE];
+
+       
+        
     }else if(QuestionCounter == [arrayOfdata count]){
         QestionOneLable.text =@"";
         QuesrionTowLable.text =  @"";
@@ -200,10 +222,46 @@ result=@"";
         QuestionCounter++;
         [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
         self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
-
+        _label.text=@"";
+         QuestionNumber.text=@"";
     }else if(QuestionCounter > [arrayOfdata count]) {
         [self showResult];
     }
+    
+}
+
+- (IBAction)btnBack:(id)sender {
+    
+    NSLog(@"Qustion counter %li",(long)QuestionCounter);
+    flag_back =1;
+    [_fbtnBack setEnabled:FALSE];
+    [self ChangeResults:lastAnswerTag];
+
+    if (QuestionCounter!=0 && QuestionCounter>1)
+
+      QuestionCounter = QuestionCounter-1;
+    if(QuestionCounter < [arrayOfdata count] && QuestionCounter >= 0){
+        
+        
+        [self addRadio];
+        
+        label1.text = [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q1"];
+        label2.text = [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q2"];
+        
+        QestionOneLable.text =  [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q1"];
+        QuesrionTowLable.text =  [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q2"];
+        
+        Question1Tag = [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q1Tag"];
+        Question2Tag = [[arrayOfdata objectAtIndex:QuestionCounter-1]valueForKey:@"Q2Tag"];
+        
+        //  NSLog(@"tag1:%@ , tag3:%@",Question1Tag,Question2Tag);
+        [self setResults:userAnswerTag];
+        
+        userAnswerTag=nil;
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
+    }
+    
+
 }
 
 -(void)setResults:(NSString*) str{
@@ -225,7 +283,33 @@ result=@"";
     else if ([str isEqualToString:@"N"])
         groupN++;
     
-       // NSLog(@"My answer Tag : %@",str);
+    lastAnswerTag = str;
+
+    
+    
+}
+
+-(void)ChangeResults:(NSString*) str{
+    
+    NSLog(@"Change answer Tag : %@",str);
+
+    
+    if ([str isEqualToString:@"E"])
+        groupE--;
+    else if ([str isEqualToString:@"F"])
+        groupF--;
+    else if ([str isEqualToString:@"I"])
+        groupI--;
+    else if ([str isEqualToString:@"T"])
+        groupT--;
+    else if ([str isEqualToString:@"S"])
+        groupS--;
+    else if ([str isEqualToString:@"P"])
+        groupP--;
+    else if ([str isEqualToString:@"J"])
+        groupJ--;
+    else if ([str isEqualToString:@"N"])
+        groupN--;
     
 }
 -(void)showResult{
@@ -272,5 +356,6 @@ result=@"";
 {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

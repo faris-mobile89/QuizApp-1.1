@@ -10,6 +10,8 @@
 #import "UserInformation.h"
 #import "ExamTypeViewController.h"
 
+#define IS_IPAD [[UIScreen mainScreen ] bounds].size.height
+
 @interface ViewController (){
     UserInformation *user ;
     //// faris
@@ -22,6 +24,15 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    if (self.view.bounds.size.height < 1000) {
+        
+        _birthDay.transform = CGAffineTransformMakeScale(.5, 0.5);
+        _picker_nationality.transform = CGAffineTransformMakeScale(.5, 0.5);
+        
+    }
+
     
     NSLocale *locale = [NSLocale currentLocale];
     NSArray *countryArray = [NSLocale ISOCountryCodes];
@@ -36,14 +47,12 @@
     self.username.delegate=self;
     self.email.delegate=self;
     [self.username resignFirstResponder];
-    self.nationality.delegate=self;
     self.phoneNumber.delegate=self;
     
     user = [[UserInformation alloc]init];
     
     _nationlaitesNames = sortedCountryArray;
     
-    _nationality =_nationlaitesNames[0];
     
     
     [super viewDidLoad];
@@ -57,7 +66,6 @@
     
     [self.username resignFirstResponder];
     [self.email resignFirstResponder];
-    [self.nationality resignFirstResponder];
     [self.phoneNumber resignFirstResponder];
     
     return YES;
@@ -74,7 +82,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    /*
+    
      NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
      NSString *documentFolder = [path objectAtIndex:0];
      NSString *filePath = [documentFolder stringByAppendingFormat:@"myfile.plist"];
@@ -94,8 +102,8 @@
      [self performSegueWithIdentifier:@"examType" sender:nil];
      
      }
-     [self performSegueWithIdentifier:@"examType" sender:nil];
-     */
+    // [self performSegueWithIdentifier:@"examType" sender:nil];
+    
 }
 
 
@@ -121,6 +129,7 @@
         [fileManager copyItemAtPath:bundle toPath: path error:&error];
     }
     
+    
     NSDate *date = self.birthDay.date;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd/MM/yyyy"];
@@ -131,6 +140,7 @@
     user.phoneNumber = self.phoneNumber.text;
     user.birthDate = dateString;
     user.email= self.email.text;
+    
     NSInteger genderIndex = self.gender.selectedSegmentIndex;
     if (genderIndex==0) {
         user.gender=@"Female";
@@ -156,7 +166,7 @@
         }
         
     }else{
-        //[self performSegueWithIdentifier:@"examType" sender:nil];
+     //   [self performSegueWithIdentifier:@"examType" sender:nil];
         
         UIAlertView * alert= [[UIAlertView alloc]initWithTitle:@"خطأ" message:@"يرجى تعبئه جميع الحقول" delegate:self cancelButtonTitle:nil otherButtonTitles:@"موافق", nil];
         [alert show];
@@ -184,7 +194,7 @@
 #pragma mark PickerView Delegate
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    _nationality = _nationlaitesNames[row];
+    //_nationality = _nationlaitesNames[row];
     NSLog(@"%@",_nationlaitesNames[row]);
 }
 

@@ -25,6 +25,8 @@
 @synthesize QuestionNumber;
 @synthesize OptionOne,OptionThree,OptionTow;
 
+int mflag_back=0;
+NSString *lastAnswerTag;
 
 NSInteger answer_A0=0;
 NSInteger answer_B0=0;
@@ -54,6 +56,8 @@ NSInteger QuestionCounter1=0;
     
     [self clearData];
     
+    [_fbtnBack setEnabled:FALSE];
+    
     UIView *container = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 400)];
     [container removeFromSuperview];
     arrayOfdata = [self LoadData];
@@ -81,7 +85,8 @@ NSInteger QuestionCounter1=0;
     
     QuestionCounter1++;
     checkedValue=nil;
-    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%i",QuestionCounter1];
+    mflag_back =1;
+    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1,@"من اصل 48"];
 }
 
 -(NSMutableArray*)LoadData{
@@ -107,7 +112,6 @@ NSInteger QuestionCounter1=0;
 
 -(void)radioButtonSelectedAtIndex:(NSUInteger)index inGroup:(NSString *)groupId{
     
-    
     switch (index) {
         case 0:
             checkedValue = [[NSString alloc]initWithFormat:@"%@%i",QuestionPart,1];
@@ -122,6 +126,7 @@ NSInteger QuestionCounter1=0;
             checkedValue=Nil;
             break;
     }
+    lastAnswerTag = checkedValue;
     NSLog(@"Checked Value %@",checkedValue);
 }
 
@@ -155,13 +160,79 @@ NSInteger QuestionCounter1=0;
     
     
 }
+-(void)ChangeResults:(NSString*) str{
+    
+    NSLog(@"Change answer Tag : %@",str);
+    
+    
+    if([str isEqual:@"A1"])
+        answer_A1--;
+    if([str isEqual:@"B1"])
+        answer_B1--;
+    if([str isEqual:@"C1"])
+        answer_C1--;
+    if([str isEqual:@"D1"])
+        answer_D1--;
+    
+    if([str isEqual:@"A3"])
+        answer_A3-=3;
+    if([str isEqual:@"B3"])
+        answer_B3-=3;
+    if([str isEqual:@"C3"])
+        answer_C3-=3;
+    if([str isEqual:@"D3"])
+        answer_D3-=3;
+    
+}
+- (IBAction)btnBack:(id)sender {
+    
+    mflag_back =1;
+    [_fbtnBack setEnabled:FALSE];
+    [self ChangeResults:lastAnswerTag];
+    
+    if (QuestionCounter1!=0 && QuestionCounter1>1){
+        
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1-1,@"من اصل 48"];
 
+        QuestionCounter1 = QuestionCounter1-2;
+    
+       NSLog(@"Last Qustion counter %li",(long)QuestionCounter1);
+
+    
+    if(QuestionCounter1 < [arrayOfdata count] && QuestionCounter1 >= 0){
+        
+        
+        [self addRadio];
+        QuestionCounter1++;
+
+      }
+    }
+}
 - (IBAction)nextQuestion:(id)sender {
+    
+    
+    NSLog(@"QustionCounter:%li",(long)QuestionCounter1);
+    
+    if (QuestionCounter1 >= 1 && mflag_back != 0) {
+        [_fbtnBack setEnabled:TRUE];
+    }
+    else{
+        
+        [_fbtnBack setEnabled:FALSE];
+    }
+    
+    if (mflag_back == 0) {
+        [_fbtnBack setEnabled:FALSE];
+    }else{
+        [_fbtnBack setEnabled:TRUE];
+        mflag_back =1;
+    }
     
     
     if (checkedValue==nil) {
         UIAlertView * alert= [[UIAlertView alloc]initWithTitle:@"خطأ" message:@"يرجى اختيار اجابة من الخيارات ! " delegate:self cancelButtonTitle:nil otherButtonTitles:@"موافق", nil];
         [alert show];
+        return;
         
     }else
         
@@ -176,19 +247,20 @@ NSInteger QuestionCounter1=0;
             
             checkedValue=nil;
             QuestionCounter1++;
-            QuestionNumber.text = [[NSString alloc]initWithFormat:@"%i",QuestionCounter1];
+            QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1,@"من اصل 48"];
         }else if(QuestionCounter1 == [arrayOfdata count]){
             [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [self setResults:checkedValue];
             QuestionCounter1++;
             [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
              self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
+            _label1.text=@"";
             
             OptionOne.text=@"";
             OptionTow.text=@"";
             OptionThree.text=@"";
             QuestionLabel.text=@"";
-            
+             QuestionNumber.text=@"";
             
         }else if(QuestionCounter1 > [arrayOfdata count]) {
         [self showResult];
@@ -246,10 +318,10 @@ NSInteger QuestionCounter1=0;
     NSInteger sumC = answer_C0+answer_C1+answer_C3;
     NSInteger sumD = answer_D0+answer_D1+answer_D3;
     
-    NSLog(@"Sum A: %i",sumA);
-    NSLog(@"Sum B: %i",sumB);
-    NSLog(@"Sum C: %i",sumC);
-    NSLog(@"Sum D: %i",sumD);
+   // NSLog(@"Sum A: %i",sumA);
+    //NSLog(@"Sum B: %i",sumB);
+    //NSLog(@"Sum C: %i",sumC);
+    //NSLog(@"Sum D: %i",sumD);
 
     
     NSNumber  *A = [[NSNumber alloc]initWithInt:sumA];
@@ -292,7 +364,7 @@ NSInteger QuestionCounter1=0;
             }
         i++;
     }
-    NSLog(@"Max number %i",max);
+    NSLog(@"Max number %li",(long)max);
 
     
     if(maxIndex==0)
@@ -326,5 +398,6 @@ NSInteger QuestionCounter1=0;
 {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

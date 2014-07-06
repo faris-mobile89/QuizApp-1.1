@@ -13,6 +13,9 @@
 @interface Exam1QuestionsViewController : UIViewController<RadioButtonDelegate>{
 
 }
+@property (weak, nonatomic) IBOutlet UIButton *fbtnBack;
+- (IBAction)btnBack:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *thankMessage;
 @property (weak, nonatomic) IBOutlet UIButton *BtnNext;
 - (IBAction)nextQuestion:(id)sender;

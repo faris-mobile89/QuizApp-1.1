@@ -11,6 +11,8 @@
 		E05964C8194FFF2300BBD5A1 /* RadioButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E05964C5194FFF2300BBD5A1 /* RadioButton-Selected.png */; };
 		E05964CA195001A200BBD5A1 /* Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E05964C9195001A200BBD5A1 /* Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg */; };
 		E05964CE1950B3CB00BBD5A1 /* dark_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E05964CD1950B3CB00BBD5A1 /* dark_background.jpg */; };
+		E05D759919663D4000DF6E3B /* radio-button-off-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E05D759719663D4000DF6E3B /* radio-button-off-icon.png */; };
+		E05D759A19663D4000DF6E3B /* radio-button-on-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E05D759819663D4000DF6E3B /* radio-button-on-icon.png */; };
 		E06A616219471E3700C81D18 /* Questions1.plist in Resources */ = {isa = PBXBuildFile; fileRef = E06A616119471E3700C81D18 /* Questions1.plist */; };
 		E0886D97194DAA6100D3A231 /* ResultExam1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0886D96194DAA6100D3A231 /* ResultExam1ViewController.m */; };
 		E0895CA019492CE600D7EDCB /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = E0895C9E19492CE600D7EDCB /* bg1.png */; };
@@ -100,6 +102,8 @@
 		E05964C5194FFF2300BBD5A1 /* RadioButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Selected.png"; sourceTree = "<group>"; };
 		E05964C9195001A200BBD5A1 /* Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
 		E05964CD1950B3CB00BBD5A1 /* dark_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dark_background.jpg; sourceTree = "<group>"; };
+		E05D759719663D4000DF6E3B /* radio-button-off-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-button-off-icon.png"; sourceTree = "<group>"; };
+		E05D759819663D4000DF6E3B /* radio-button-on-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-button-on-icon.png"; sourceTree = "<group>"; };
 		E06A616119471E3700C81D18 /* Questions1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions1.plist; sourceTree = "<group>"; };
 		E0886D95194DAA6100D3A231 /* ResultExam1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultExam1ViewController.h; sourceTree = "<group>"; };
 		E0886D96194DAA6100D3A231 /* ResultExam1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultExam1ViewController.m; sourceTree = "<group>"; };
@@ -369,6 +373,8 @@
 		E09EAE1E1946CAE5009BA115 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E05D759719663D4000DF6E3B /* radio-button-off-icon.png */,
+				E05D759819663D4000DF6E3B /* radio-button-on-icon.png */,
 				E094E01E19519E8B00CB390D /* icon_256.png */,
 				E0F83208195113A80040DBC0 /* print.png */,
 				E05964CD1950B3CB00BBD5A1 /* dark_background.jpg */,
@@ -443,7 +449,7 @@
 				ORGANIZATIONNAME = "Faris Abu Saleem";
 				TargetAttributes = {
 					E09EADDE1946ABE1009BA115 = {
-						DevelopmentTeam = A2VDE4B3BW;
+						DevelopmentTeam = CCF8JC7BYH;
 					};
 					E09EADFF1946ABE2009BA115 = {
 						TestTargetID = E09EADDE1946ABE1009BA115;
@@ -490,6 +496,7 @@
 				E08A4F341954D5B500BA4C38 /* ESFJ.html in Resources */,
 				E05964C8194FFF2300BBD5A1 /* RadioButton-Selected.png in Resources */,
 				E08A4F321954D5B500BA4C38 /* ENTJ.html in Resources */,
+				E05D759919663D4000DF6E3B /* radio-button-off-icon.png in Resources */,
 				E0F83209195113A80040DBC0 /* print.png in Resources */,
 				E08B933819576C890076B69D /* Main_iphone.storyboard in Resources */,
 				E0F83207195105D20040DBC0 /* userInfo.plist in Resources */,
@@ -511,6 +518,7 @@
 				E08A4FAF1954D7C300BA4C38 /* image012.jpg in Resources */,
 				E05964C6194FFF2300BBD5A1 /* RadioButton-Unselected.png in Resources */,
 				E08A4FA71954D7C300BA4C38 /* image004.jpg in Resources */,
+				E05D759A19663D4000DF6E3B /* radio-button-on-icon.png in Resources */,
 				E08A4F381954D5B500BA4C38 /* INFJ.html in Resources */,
 				E08A4F3D1954D5B500BA4C38 /* ISFP.html in Resources */,
 				E0D499B7194705060006C2B7 /* RadioButton-Unselected1.png in Resources */,
@@ -696,7 +704,7 @@
 				INFOPLIST_FILE = "QuizApp/QuizApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "8FF112E5-F574-431C-B7A6-78D31B54D7C8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -714,7 +722,7 @@
 				INFOPLIST_FILE = "QuizApp/QuizApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "8FF112E5-F574-431C-B7A6-78D31B54D7C8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

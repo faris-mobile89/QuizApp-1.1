@@ -1,6 +1,6 @@
 
-/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "0Tn-ag-mQk"; */
-"0Tn-ag-mQk.normalTitle" = "انهاء الاختبار";
+/* Class = "IBUIButton"; normalTitle = "الصفحه الرئيسيه"; ObjectID = "0Tn-ag-mQk"; */
+"0Tn-ag-mQk.normalTitle" = "الصفحه الرئيسيه";
 
 /* Class = "IBUIButton"; normalTitle = "اختبار    تحديد   الشخصيه"; ObjectID = "4Hh-H5-4se"; */
 "4Hh-H5-4se.normalTitle" = "اختبار    تحديد   الشخصيه";
@@ -32,8 +32,8 @@
 /* Class = "IBUILabel"; text = "السؤال رقم :"; ObjectID = "Rsm-7s-1RT"; */
 "Rsm-7s-1RT.text" = "السؤال رقم :";
 
-/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "SaL-Rp-GRc"; */
-"SaL-Rp-GRc.normalTitle" = "انهاء الاختبار";
+/* Class = "IBUIButton"; normalTitle = "الصفحه الرئيسيه"; ObjectID = "SaL-Rp-GRc"; */
+"SaL-Rp-GRc.normalTitle" = "الصفحه الرئيسيه";
 
 /* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "Tdq-aV-HED"; */
 "Tdq-aV-HED.normalTitle" = "Button";
@@ -50,8 +50,8 @@
 /* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ZcV-IW-UZo"; */
 "ZcV-IW-UZo.normalTitle" = "Button";
 
-/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "bdE-3I-kjV"; */
-"bdE-3I-kjV.normalTitle" = "انهاء الاختبار";
+/* Class = "IBUIButton"; normalTitle = "الصفحه الرئيسيه"; ObjectID = "bdE-3I-kjV"; */
+"bdE-3I-kjV.normalTitle" = "الصفحه الرئيسيه";
 
 /* Class = "IBUITextField"; placeholder = "رقم الهاتف"; ObjectID = "cRm-JG-dJx"; */
 "cRm-JG-dJx.placeholder" = "رقم الهاتف";
@@ -104,8 +104,8 @@
 /* Class = "IBUITextField"; placeholder = "العنوان"; ObjectID = "uFj-ix-cAq"; */
 "uFj-ix-cAq.placeholder" = "العنوان";
 
-/* Class = "IBUIButton"; normalTitle = "انهاء الاختبار"; ObjectID = "wS1-j7-a1l"; */
-"wS1-j7-a1l.normalTitle" = "انهاء الاختبار";
+/* Class = "IBUIButton"; normalTitle = "الصفحه الرئيسيه"; ObjectID = "wS1-j7-a1l"; */
+"wS1-j7-a1l.normalTitle" = "الصفحه الرئيسيه";
 
 /* Class = "IBUITextView"; text = "اختبار التخصص الجامعي\n\nوضع هذا الاختبار للكشف عن استعداداتك وهو مؤشر يستند عليه لتحديد التخصص الأنسب لك، لذا نأمل منك الإجابة على ما سيرد بكل صدق ودقة حتى نتمكن من الوصول لنتيجة تصب في مصلحتك. وتذكر.... أنه لا يوجد إجابة صحيحة وأخرى خاطئة!"; ObjectID = "ydp-Hn-l58"; */
 "ydp-Hn-l58.text" = "اختبار التخصص الجامعي\n\nوضع هذا الاختبار للكشف عن استعداداتك وهو مؤشر يستند عليه لتحديد التخصص الأنسب لك، لذا نأمل منك الإجابة على ما سيرد بكل صدق ودقة حتى نتمكن من الوصول لنتيجة تصب في مصلحتك. وتذكر.... أنه لا يوجد إجابة صحيحة وأخرى خاطئة!";

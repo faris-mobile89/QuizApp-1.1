@@ -12,6 +12,9 @@
 @interface ExamTowViewController : UIViewController<RadioButtonDelegate>{
 
 }
+- (IBAction)btnBack:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *fbtnBack;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *OptionThree;
 @property (weak, nonatomic) IBOutlet UILabel *OptionTow;
 @property (weak, nonatomic) IBOutlet UILabel *OptionOne;

@@ -39,15 +39,15 @@
     
     NSArray *userData = [NSArray arrayWithContentsOfFile:path];
      NSLog(@"user data%@",userData);
-    UserInformation *user = [[UserInformation alloc]init];
+   /* UserInformation *user = [[UserInformation alloc]init];
     user.username = [userData objectAtIndex:0];
     user.phoneNumber=[userData objectAtIndex:1];
     user.birthDate = [userData objectAtIndex:2];
     user.email= [userData objectAtIndex:3];
-    user.address = [userData objectAtIndex:4];
-    user.gender = [userData objectAtIndex:5];
-    
+    user.gender = [userData objectAtIndex:4];
+    */
     myWebView.delegate = self;
+    
     NSBundle *bundle=[NSBundle mainBundle];
     NSString *filePath = [bundle pathForResource:resultTag ofType: @"html"];
     NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
