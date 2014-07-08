@@ -83,7 +83,7 @@ result=@"";
     
     [self clearData];
     
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 400)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80 , 200)];
     [container removeFromSuperview];
     arrayOfdata = [self LoadData];
     
@@ -92,8 +92,9 @@ result=@"";
     RadioButton *rb1 = [[RadioButton alloc] initWithGroupId:@"first group" index:0];
     RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
     
-    rb1.frame = CGRectMake(5,10,22,22);
-    rb2.frame = CGRectMake(5,130,22,22);
+    
+    rb1.frame = CGRectMake(1,10,60,60);
+    rb2.frame = CGRectMake(1,130,60,60);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -105,7 +106,7 @@ result=@"";
     Question1Tag = [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q1Tag"];
     Question2Tag = [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q2Tag"];
     QuestionCounter++;
-    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
+    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
     userAnswerTag=nil;
 }
 -(NSMutableArray*)LoadData{
@@ -151,7 +152,7 @@ result=@"";
 
     [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
 
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 400)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80 , 200)];
     [container removeFromSuperview];
     
     [radioView addSubview:container];
@@ -162,8 +163,9 @@ result=@"";
     QestionOneLable.text =  [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q1"];
     QuesrionTowLable.text =  [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q2"];
     
-    rb1.frame = CGRectMake(5,10,22,22);
-    rb2.frame = CGRectMake(5,130,22,22);
+    
+    rb1.frame = CGRectMake(1,10,60,60);
+    rb2.frame = CGRectMake(1,130,60,60);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -209,7 +211,7 @@ result=@"";
 
         userAnswerTag=nil;
         QuestionCounter++;
-        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
         [_fbtnBack setEnabled:TRUE];
 
        
@@ -258,7 +260,7 @@ result=@"";
         [self setResults:userAnswerTag];
         
         userAnswerTag=nil;
-        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter,@"من اصل 38"];
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
     }
     
 
@@ -339,11 +341,11 @@ result=@"";
      result =[[NSString alloc]initWithFormat:@"%@%@%@%@",str1,str2,str3,str4 ];
     
      //NSLog(@"Result:%@",result);
-    
     [self performSegueWithIdentifier:@"result_exam1" sender:nil];
     
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
         if ([segue.identifier isEqualToString:@"result_exam1"]) {
        
             ResultExam1ViewController *r = segue.destinationViewController;

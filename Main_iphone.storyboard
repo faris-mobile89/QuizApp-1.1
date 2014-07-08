@@ -378,8 +378,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-MD-PiQ">
-                                <rect key="frame" x="261" y="124" width="59" height="191"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-MD-PiQ">
+                                <rect key="frame" x="258" y="124" width="59" height="191"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-rn-lWO">
@@ -503,7 +503,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="label" destination="WUf-yZ-tkC" id="hqb-87-Cpg"/>
                         <outlet property="radioView" destination="cZo-MD-PiQ" id="0Q9-6k-BL1"/>
                         <outlet property="thankMessage" destination="3CG-aZ-cBN" id="kXg-Q0-Ysd"/>
-                        <segue destination="iLg-M4-B4u" kind="modal" identifier="result_exam1" modalTransitionStyle="partialCurl" id="Woc-5k-L1c"/>
+                        <segue destination="iLg-M4-B4u" kind="modal" identifier="result_exam1" id="Woc-5k-L1c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6V-5U-EK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -542,7 +542,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bRl-fk-VFL" kind="modal" modalTransitionStyle="flipHorizontal" id="vob-tz-1N4"/>
+                                    <segue destination="bRl-fk-VFL" kind="modal" id="vob-tz-1N4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-me-t2H">
@@ -760,7 +760,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="label1" destination="d3n-lb-ZMd" id="Fqa-A3-zG2"/>
                         <outlet property="radioView" destination="2KI-H9-MWG" id="bjY-OM-jva"/>
                         <outlet property="thankMessage" destination="RBb-h0-w39" id="pxS-St-CJe"/>
-                        <segue destination="5ea-xs-TU2" kind="modal" identifier="result_exam2" modalTransitionStyle="partialCurl" id="TiR-Do-QXN"/>
+                        <segue destination="5ea-xs-TU2" kind="modal" identifier="result_exam2" id="TiR-Do-QXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r88-uz-wRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -799,7 +799,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bRl-fk-VFL" kind="push" id="B3q-bh-OY3"/>
+                                    <segue destination="bRl-fk-VFL" kind="modal" id="B3q-bh-OY3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-xX-E4w">
@@ -845,6 +845,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JYO-W4-J4z"/>
+        <segue reference="ZNB-Hq-M75"/>
     </inferredMetricsTieBreakers>
 </document>

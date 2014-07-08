@@ -19,8 +19,8 @@
 @synthesize groupId=_groupId;
 @synthesize index=_index;
 
-static const NSUInteger kRadioButtonWidth=30;
-static const NSUInteger kRadioButtonHeight=30;
+static const NSUInteger kRadioButtonWidth=60;
+static const NSUInteger kRadioButtonHeight=60;
 
 static NSMutableArray *rb_instances=nil;
 static NSMutableDictionary *rb_observers=nil;
@@ -119,7 +119,8 @@ static NSMutableDictionary *rb_observers=nil;
     // Customize UIButton
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
     _button.frame = CGRectMake(0, 0,kRadioButtonWidth, kRadioButtonHeight);
-    _button.adjustsImageWhenHighlighted = NO; 
+    _button.adjustsImageWhenHighlighted = NO;
+    //[_button setBackgroundColor:[UIColor grayColor]];
     
     [_button setImage:[UIImage imageNamed:@"radio-button-off-icon.png"] forState:UIControlStateNormal];
     [_button setImage:[UIImage imageNamed:@"radio-button-on-icon.png"] forState:UIControlStateSelected];

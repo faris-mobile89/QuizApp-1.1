@@ -102,7 +102,7 @@
      [self performSegueWithIdentifier:@"examType" sender:nil];
      
      }
-    // [self performSegueWithIdentifier:@"examType" sender:nil];
+     [self performSegueWithIdentifier:@"examType" sender:nil];
     
 }
 

@@ -58,7 +58,7 @@ NSInteger QuestionCounter1=0;
     
     [_fbtnBack setEnabled:FALSE];
     
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 400)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 400)];
     [container removeFromSuperview];
     arrayOfdata = [self LoadData];
     
@@ -68,9 +68,10 @@ NSInteger QuestionCounter1=0;
     RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
     RadioButton *rb3 = [[RadioButton alloc] initWithGroupId:@"first group" index:2];
     
-    rb1.frame = CGRectMake(0,0,22,22);
-    rb2.frame = CGRectMake(0,50,22,22);
-    rb3.frame = CGRectMake(0,100,22,22);
+    rb1.frame = CGRectMake(0,0,60,60);
+    rb2.frame = CGRectMake(0,50,60,60);
+    rb3.frame = CGRectMake(0,100,60,60);
+    
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -86,7 +87,7 @@ NSInteger QuestionCounter1=0;
     QuestionCounter1++;
     checkedValue=nil;
     mflag_back =1;
-    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1,@"من اصل 48"];
+    QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1];
 }
 
 -(NSMutableArray*)LoadData{
@@ -136,7 +137,7 @@ NSInteger QuestionCounter1=0;
     
     [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 400)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 400)];
     [container removeFromSuperview];
     
     [radioView addSubview:container];
@@ -145,9 +146,9 @@ NSInteger QuestionCounter1=0;
     RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
     RadioButton *rb3 = [[RadioButton alloc] initWithGroupId:@"first group" index:2];
     
-    rb1.frame = CGRectMake(0,0,22,22);
-    rb2.frame = CGRectMake(0,50,22,22);
-    rb3.frame = CGRectMake(0,100,22,22);
+    rb1.frame = CGRectMake(0,0,60,60);
+    rb2.frame = CGRectMake(0,50,60,60);
+    rb3.frame = CGRectMake(0,100,60,60);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -192,7 +193,9 @@ NSInteger QuestionCounter1=0;
     
     if (QuestionCounter1!=0 && QuestionCounter1>1){
         
-        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1-1,@"من اصل 48"];
+        
+        QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1-1];
+
 
         QuestionCounter1 = QuestionCounter1-2;
     
@@ -247,7 +250,8 @@ NSInteger QuestionCounter1=0;
             
             checkedValue=nil;
             QuestionCounter1++;
-            QuestionNumber.text = [[NSString alloc]initWithFormat:@"%li %@",(long)QuestionCounter1,@"من اصل 48"];
+            QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1];
+
         }else if(QuestionCounter1 == [arrayOfdata count]){
             [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [self setResults:checkedValue];
