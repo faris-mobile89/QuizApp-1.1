@@ -224,6 +224,7 @@ result=@"";
         QuestionCounter++;
         [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
         self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
+        [_fbtnBack setEnabled:FALSE];
         _label.text=@"";
          QuestionNumber.text=@"";
     }else if(QuestionCounter > [arrayOfdata count]) {

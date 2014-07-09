@@ -465,9 +465,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-aZ-cBN">
-                                <rect key="frame" x="40" y="277" width="240" height="38"/>
+                                <rect key="frame" x="27" y="289" width="266" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -545,7 +545,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="bRl-fk-VFL" kind="modal" id="vob-tz-1N4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-me-t2H">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-me-t2H">
                                 <rect key="frame" x="287" y="20" width="33" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="print.png"/>
@@ -560,8 +560,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstItem="YMl-q2-5pB" firstAttribute="leading" secondItem="xCv-IQ-Cey" secondAttribute="leading" id="Cii-tR-IjS"/>
                             <constraint firstItem="5Tb-jk-CiF" firstAttribute="leading" secondItem="xCv-IQ-Cey" secondAttribute="leading" constant="87" id="IBM-0I-y6S"/>
                             <constraint firstItem="5Tb-jk-CiF" firstAttribute="centerX" secondItem="YMl-q2-5pB" secondAttribute="centerX" id="IZ0-Vp-gFx"/>
-                            <constraint firstItem="YMl-q2-5pB" firstAttribute="top" secondItem="rOb-me-t2H" secondAttribute="bottom" constant="3" id="Zzv-R8-53t"/>
-                            <constraint firstItem="YMl-q2-5pB" firstAttribute="trailing" secondItem="rOb-me-t2H" secondAttribute="trailing" id="aIM-uK-tIg"/>
                             <constraint firstItem="5Tb-jk-CiF" firstAttribute="top" secondItem="YMl-q2-5pB" secondAttribute="bottom" constant="2" id="pRU-Zh-OH6"/>
                             <constraint firstItem="5Tb-jk-CiF" firstAttribute="centerX" secondItem="xCv-IQ-Cey" secondAttribute="centerX" id="xJO-Lz-1JV"/>
                         </constraints>
@@ -729,9 +727,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-h0-w39">
-                                <rect key="frame" x="33" y="341" width="255" height="35"/>
+                                <rect key="frame" x="28" y="341" width="265" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السؤال رقم :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-lb-ZMd">
@@ -802,7 +800,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="bRl-fk-VFL" kind="modal" id="B3q-bh-OY3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-xX-E4w">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-xX-E4w">
                                 <rect key="frame" x="287" y="20" width="33" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="print.png"/>
@@ -814,8 +812,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bmf-AG-Fnu" firstAttribute="top" secondItem="uRI-0a-Dad" secondAttribute="bottom" constant="8" id="5Ml-wr-ZWG"/>
-                            <constraint firstItem="dSJ-Q8-hyP" firstAttribute="top" secondItem="6AF-xX-E4w" secondAttribute="bottom" constant="3" id="9ea-Tv-dO4"/>
-                            <constraint firstItem="dSJ-Q8-hyP" firstAttribute="trailing" secondItem="6AF-xX-E4w" secondAttribute="trailing" id="Dec-Jm-PTW"/>
                             <constraint firstItem="uRI-0a-Dad" firstAttribute="leading" secondItem="gE2-ze-NJY" secondAttribute="leading" constant="87" id="DlZ-xv-3IY"/>
                             <constraint firstItem="uRI-0a-Dad" firstAttribute="centerX" secondItem="gE2-ze-NJY" secondAttribute="centerX" id="g1i-B5-bko"/>
                             <constraint firstItem="dSJ-Q8-hyP" firstAttribute="leading" secondItem="gE2-ze-NJY" secondAttribute="leading" id="nOZ-JZ-csN"/>
@@ -845,6 +841,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZNB-Hq-M75"/>
+        <segue reference="8vW-xC-Yin"/>
     </inferredMetricsTieBreakers>
 </document>

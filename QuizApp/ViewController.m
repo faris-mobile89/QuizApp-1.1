@@ -100,9 +100,8 @@
      user.address = [array objectAtIndex:4];
      user.gender = [array objectAtIndex:5];
      [self performSegueWithIdentifier:@"examType" sender:nil];
-     
+
      }
-     [self performSegueWithIdentifier:@"examType" sender:nil];
     
 }
 

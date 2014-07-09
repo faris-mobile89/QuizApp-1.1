@@ -258,6 +258,8 @@ NSInteger QuestionCounter1=0;
             QuestionCounter1++;
             [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
              self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
+            [_fbtnBack setEnabled:FALSE];
+
             _label1.text=@"";
             
             OptionOne.text=@"";
