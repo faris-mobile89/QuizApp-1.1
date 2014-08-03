@@ -8,11 +8,10 @@
 
 #import "Exam1QuestionsViewController.h"
 #import "ResultExam1ViewController.h"
+#define DegreeToRadius(d)((d)*M_PI/180.0)
+
 @interface Exam1QuestionsViewController (){
     NSMutableArray *arrayOfdata;
-    
-
-
 }
 @property (nonatomic,strong) NSString *Question1Tag,*Question2Tag,*userAnswerTag;
 @property (assign, nonatomic) BOOL transitionInProgress;
@@ -53,7 +52,12 @@ NSString *lastAnswerTag;
 {
     [self firstLaod];
     [_fbtnBack setEnabled:FALSE];
-
+    QestionOneLable.layer.cornerRadius = 10;
+    QuesrionTowLable.layer.cornerRadius = 10;
+    //_prorgressBar.layer.cornerRadius = 10;
+    [_fbtnBack setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    _prorgressBar.transform = CGAffineTransformMakeRotation(DegreeToRadius(180));
+    _prorgressBar.progress=0.0;
     
     [super viewDidLoad];
 }
@@ -83,7 +87,9 @@ result=@"";
     
     [self clearData];
     
+
     UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80 , 200)];
+    [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [container removeFromSuperview];
     arrayOfdata = [self LoadData];
     
@@ -93,8 +99,8 @@ result=@"";
     RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
     
     
-    rb1.frame = CGRectMake(1,10,60,60);
-    rb2.frame = CGRectMake(1,130,60,60);
+    rb1.frame = CGRectMake(0,0,80,80);
+    rb2.frame = CGRectMake(0,80,80,80);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -107,6 +113,8 @@ result=@"";
     Question2Tag = [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q2Tag"];
     QuestionCounter++;
     QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
+    //_prorgressBar.progress = ((float)((QuestionCounter/ 38.0)*100)/100);
+
     userAnswerTag=nil;
 }
 -(NSMutableArray*)LoadData{
@@ -164,8 +172,8 @@ result=@"";
     QuesrionTowLable.text =  [[arrayOfdata objectAtIndex:QuestionCounter]valueForKey:@"Q2"];
     
     
-    rb1.frame = CGRectMake(1,10,60,60);
-    rb2.frame = CGRectMake(1,130,60,60);
+    rb1.frame = CGRectMake(0,0,80,80);
+    rb2.frame = CGRectMake(0,80,80,80);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -213,18 +221,19 @@ result=@"";
         QuestionCounter++;
         QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
         [_fbtnBack setEnabled:TRUE];
-
-       
+        
+       _prorgressBar.progress = ((float)(((QuestionCounter-1) / 38.0)*100)/100);
         
     }else if(QuestionCounter == [arrayOfdata count]){
-        QestionOneLable.text =@"";
-        QuesrionTowLable.text =  @"";
+        [QestionOneLable setHidden:TRUE];
+        [QuesrionTowLable setHidden:TRUE];
          [self setResults:userAnswerTag];
         [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
         QuestionCounter++;
         [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
         self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
         [_fbtnBack setEnabled:FALSE];
+        _prorgressBar.progress =1.0;
         _label.text=@"";
          QuestionNumber.text=@"";
     }else if(QuestionCounter > [arrayOfdata count]) {
@@ -262,6 +271,7 @@ result=@"";
         
         userAnswerTag=nil;
         QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"38",(long)QuestionCounter];
+        _prorgressBar.progress = ((float)((QuestionCounter / 38.0)*100)/100);
     }
     
 

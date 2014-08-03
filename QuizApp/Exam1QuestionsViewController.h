@@ -15,12 +15,13 @@
 }
 @property (weak, nonatomic) IBOutlet UIButton *fbtnBack;
 - (IBAction)btnBack:(id)sender;
+- (IBAction)nextQuestion:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *thankMessage;
 @property (weak, nonatomic) IBOutlet UIButton *BtnNext;
-- (IBAction)nextQuestion:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *radioView;
 @property (weak, nonatomic) IBOutlet UILabel *QestionOneLable;
 @property (weak, nonatomic) IBOutlet UILabel *QuesrionTowLable;
 @property (weak, nonatomic) IBOutlet UILabel *QuestionNumber;
+@property (weak, nonatomic) IBOutlet UIProgressView *prorgressBar;
 @end

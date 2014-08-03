@@ -8,6 +8,7 @@
 
 #import "ExamTowViewController.h"
 #import "ResultExamTowViewController.h"
+#define DegreeToRadius(d)((d)*M_PI/180.0)
 
 @interface ExamTowViewController (){
     NSMutableArray *arrayOfdata;
@@ -48,8 +49,14 @@ NSInteger QuestionCounter1=0;
 
 - (void)viewDidLoad
 {
-    [self firstLaod];
+   
     [super viewDidLoad];
+    _progressBar.transform = CGAffineTransformMakeRotation(DegreeToRadius(180));
+    _progressBar.progress=0.0;
+    OptionOne.layer.cornerRadius = 10;
+    OptionTow.layer.cornerRadius = 10;
+    OptionThree.layer.cornerRadius = 10;
+    [self firstLaod];
 }
 
 -(void)firstLaod{
@@ -61,16 +68,18 @@ NSInteger QuestionCounter1=0;
     UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 400)];
     [container removeFromSuperview];
     arrayOfdata = [self LoadData];
-    
+    [_fbtnBack setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     [radioView addSubview:container];
     
-    RadioButton *rb1 = [[RadioButton alloc] initWithGroupId:@"first group" index:0];
-    RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
-    RadioButton *rb3 = [[RadioButton alloc] initWithGroupId:@"first group" index:2];
+    RadioButton *rb1 = [[RadioButton alloc] initWithGroupId:@"first group" index:0 ];
+    RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1 ];
+    RadioButton *rb3 = [[RadioButton alloc] initWithGroupId:@"first group" index:2 ];
+
     
-    rb1.frame = CGRectMake(0,0,60,60);
-    rb2.frame = CGRectMake(0,50,60,60);
-    rb3.frame = CGRectMake(0,100,60,60);
+    rb1.frame = CGRectMake(0,0,80,80);
+    rb2.frame = CGRectMake(0,55,80,80);
+    rb3.frame = CGRectMake(0,110,80,80);
+    
     
     
     [container addSubview:rb1];
@@ -88,6 +97,7 @@ NSInteger QuestionCounter1=0;
     checkedValue=nil;
     mflag_back =1;
     QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1];
+   // _progressBar.progress = ((float)((QuestionCounter1/ 38.0)*100)/100);
 }
 
 -(NSMutableArray*)LoadData{
@@ -146,9 +156,9 @@ NSInteger QuestionCounter1=0;
     RadioButton *rb2 = [[RadioButton alloc] initWithGroupId:@"first group" index:1];
     RadioButton *rb3 = [[RadioButton alloc] initWithGroupId:@"first group" index:2];
     
-    rb1.frame = CGRectMake(0,0,60,60);
-    rb2.frame = CGRectMake(0,50,60,60);
-    rb3.frame = CGRectMake(0,100,60,60);
+    rb1.frame = CGRectMake(0,0,80,80);
+    rb2.frame = CGRectMake(0,55,80,80);
+    rb3.frame = CGRectMake(0,110,80,80);
     
     [container addSubview:rb1];
     [container addSubview:rb2];
@@ -156,6 +166,7 @@ NSInteger QuestionCounter1=0;
     
     QuestionLabel.text = [[arrayOfdata objectAtIndex:QuestionCounter1]valueForKey:@"Question"];
     QuestionPart = [[arrayOfdata objectAtIndex:QuestionCounter1]valueForKey:@"Part"];
+    _progressBar.progress = ((float)((QuestionCounter1/ 48.0)*100)/100);
 
     [RadioButton addObserverForGroupId:@"first group" observer:self];
     
@@ -195,6 +206,7 @@ NSInteger QuestionCounter1=0;
         
         
         QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1-1];
+        _progressBar.progress = ((float)((QuestionCounter1-1/ 48.0)*100)/100);
 
 
         QuestionCounter1 = QuestionCounter1-2;
@@ -251,6 +263,7 @@ NSInteger QuestionCounter1=0;
             checkedValue=nil;
             QuestionCounter1++;
             QuestionNumber.text = [[NSString alloc]initWithFormat:@"%@ / %li",@"48",(long)QuestionCounter1];
+            _progressBar.progress = ((float)(((QuestionCounter1-1)/ 48.0)*100)/100);
 
         }else if(QuestionCounter1 == [arrayOfdata count]){
             [[radioView subviews ]makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -258,6 +271,10 @@ NSInteger QuestionCounter1=0;
             QuestionCounter1++;
             [self.BtnNext setTitle:@"ُعرض النتيجة" forState:UIControlStateNormal];
              self.thankMessage.text=@"شكرا لكم لاستكمال الاختبار ،نتمنى لكم نتيجة موفقة .";
+            _progressBar.progress = 1.0;
+            [OptionOne setHidden:TRUE];
+            [OptionTow setHidden:TRUE];
+            [OptionThree setHidden:TRUE];
             [_fbtnBack setEnabled:FALSE];
 
             _label1.text=@"";

@@ -23,6 +23,8 @@
 
 
 -(id)initWithGroupId:(NSString*)groupId index:(NSUInteger)index;
+-(id)initWithGroupId:(NSString*)groupId index:(NSUInteger)index size:(NSUInteger)s;
+
 +(void)addObserverForGroupId:(NSString*)groupId observer:(id)observer;
 
 -(void)removeSelection;

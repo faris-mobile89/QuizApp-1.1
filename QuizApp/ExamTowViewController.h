@@ -21,7 +21,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *QuestionNumber;
 @property (weak, nonatomic) IBOutlet UILabel *thankMessage;
 @property (weak, nonatomic) IBOutlet UIButton *BtnNext;
-- (IBAction)nextQuestion:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *radioView;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 @property (weak, nonatomic) IBOutlet UILabel *QuestionLabel;
+- (IBAction)nextQuestion:(id)sender;
+
 @end

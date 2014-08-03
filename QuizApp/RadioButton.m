@@ -19,8 +19,8 @@
 @synthesize groupId=_groupId;
 @synthesize index=_index;
 
-static const NSUInteger kRadioButtonWidth=60;
-static const NSUInteger kRadioButtonHeight=60;
+ NSUInteger kRadioButtonWidth=64;
+ NSUInteger kRadioButtonHeight=64;
 
 static NSMutableArray *rb_instances=nil;
 static NSMutableDictionary *rb_observers=nil;
@@ -85,6 +85,16 @@ static NSMutableDictionary *rb_observers=nil;
     return  self;
 }
 
+-(id)initWithGroupId:(NSString *)groupId index:(NSUInteger)index size:(NSUInteger)s{
+    self = [self init];
+    if (self) {
+        _groupId = groupId;
+        _index = index;
+        kRadioButtonWidth= kRadioButtonHeight = s;
+    }
+    return  self;
+}
+
 - (id)init{
     self = [super init];
     if (self) {
@@ -122,8 +132,8 @@ static NSMutableDictionary *rb_observers=nil;
     _button.adjustsImageWhenHighlighted = NO;
     //[_button setBackgroundColor:[UIColor grayColor]];
     
-    [_button setImage:[UIImage imageNamed:@"radio-button-off-icon.png"] forState:UIControlStateNormal];
-    [_button setImage:[UIImage imageNamed:@"radio-button-on-icon.png"] forState:UIControlStateSelected];
+    [_button setImage:[UIImage imageNamed:@"unuchecked.png"] forState:UIControlStateNormal];
+    [_button setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
     
     [_button addTarget:self action:@selector(handleButtonTap:) forControlEvents:UIControlEventTouchUpInside];
     

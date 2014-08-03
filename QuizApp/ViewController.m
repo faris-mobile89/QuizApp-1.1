@@ -12,6 +12,8 @@
 
 #define IS_IPAD [[UIScreen mainScreen ] bounds].size.height
 
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
 @interface ViewController (){
     UserInformation *user ;
     //// faris
@@ -21,14 +23,26 @@
 @end
 
 @implementation ViewController
-
+UIButton *doneButton;
 - (void)viewDidLoad
 {
+    
+    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           
+                           [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(doneButton:)],
+                           
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           nil];
+
+    [_phoneNumber sizeToFit];
+    _phoneNumber.inputAccessoryView = numberToolbar;
     
     
     if (self.view.bounds.size.height < 1000) {
         
-        _birthDay.transform = CGAffineTransformMakeScale(.5, 0.5);
+        _birthDay.transform = CGAffineTransformMakeScale(0.8, 0.6);
         _picker_nationality.transform = CGAffineTransformMakeScale(.5, 0.5);
         
     }
@@ -58,8 +72,66 @@
     [super viewDidLoad];
 }
 
--(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+ /*
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    if (textField == _phoneNumber) {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    }
+}
+
+- (void)keyboardWillShow:(NSNotification *)note {
+   
+    // create custom button
+    UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    doneButton.frame = CGRectMake(0, 163, 106, 53);
+    doneButton.adjustsImageWhenHighlighted = NO;
+    [doneButton setTitle:@"Done" forState:UIControlStateNormal];
+    [doneButton setImage:[UIImage imageNamed:@"doneButtonNormal.png"] forState:UIControlStateNormal];
+    [doneButton setImage:[UIImage imageNamed:@"doneButtonPressed.png"] forState:UIControlStateHighlighted];
+    [doneButton addTarget:self action:@selector(doneButton:) forControlEvents:UIControlEventTouchUpInside];
     
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIView *keyboardView = [[[[[UIApplication sharedApplication] windows] lastObject] subviews] firstObject];
+            [doneButton setFrame:CGRectMake(0, keyboardView.frame.size.height - 53, 106, 53)];
+            [keyboardView addSubview:doneButton];
+            [keyboardView bringSubviewToFront:doneButton];
+            
+            [UIView animateWithDuration:[[note.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue]-.02
+                                  delay:.0
+                                options:[[note.userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]
+                             animations:^{
+                                 self.view.frame = CGRectOffset(self.view.frame, 0, 0);
+                             } completion:nil];
+        });
+    }else {
+        // locate keyboard view
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
+            UIView* keyboard;
+            for(int i=0; i<[tempWindow.subviews count]; i++) {
+                keyboard = [tempWindow.subviews objectAtIndex:i];
+                // keyboard view found; add the custom button to it
+                if([[keyboard description] hasPrefix:@"UIKeyboard"] == YES)
+                    [keyboard addSubview:doneButton];
+            }
+        });
+    }
+     
+
+}
+*/
+    
+-(void)doneButton:(id)sender{
+    
+    [self.phoneNumber resignFirstResponder];
+
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     return YES;
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -147,7 +219,7 @@
         user.gender=@"Male";
     }
     
-    if ([user.username length ] > 0 && [user.email length ] > 0  ) {
+    if ([user.email length ] > 0  ) {
         
         if([self NSStringIsValidEmail:user.email]){
             
@@ -165,15 +237,16 @@
         }
         
     }else{
-     //   [self performSegueWithIdentifier:@"examType" sender:nil];
+        [self performSegueWithIdentifier:@"examType" sender:nil];
         
-        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:@"خطأ" message:@"يرجى تعبئه جميع الحقول" delegate:self cancelButtonTitle:nil otherButtonTitles:@"موافق", nil];
+        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:@"خطأ" message:@"البريد الالكتروني الزامي" delegate:self cancelButtonTitle:nil otherButtonTitles:@"موافق", nil];
         [alert show];
         
     }
     
     
 }
+
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
     
@@ -183,10 +256,21 @@
 {
     return [_nationlaitesNames count];
 }
-
+/*
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return _nationlaitesNames[row];
+}
+*/
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    
+    UILabel* label = (UILabel*)view;
+    if (!label){
+        label = [[UILabel alloc] init];
+        [label setFont:[UIFont  boldSystemFontOfSize:30]];
+        [label setText:_nationlaitesNames[row]];
+    }
+    return label;
 }
 
 #pragma mark -

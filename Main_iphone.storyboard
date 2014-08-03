@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="E5l-hg-YMt">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -16,37 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-Pd-XgU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-Background-thinking-head-creative-transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="u7a-lL-eBH">
+                                <rect key="frame" x="47" y="0.0" width="273" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndL-yn-ig7">
-                                <rect key="frame" x="76" y="399" width="168" height="51"/>
+                                <rect key="frame" x="39" y="306" width="210" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="29"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="استمرار" backgroundImage="pink_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="استمرار">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="mO7-Kz-ubQ" kind="modal" id="YER-wT-GJ2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الرجاء تعبئه معلوماتك الشخصيه للبدء بالاختبار" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-nC-lnZ">
-                                <rect key="frame" x="27" y="317" width="273" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اهلا بكم  في اختباريّ تحديد الشخصية و القدرات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-nC-lnZ">
+                                <rect key="frame" x="8" y="266" width="273" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="23"/>
-                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.96999999999999997" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="u7a-lL-eBH" firstAttribute="top" secondItem="Oc8-7t-dSd" secondAttribute="top" id="2uX-hA-1ZL"/>
+                            <constraint firstAttribute="bottom" secondItem="u7a-lL-eBH" secondAttribute="bottom" id="5cn-r0-Hk6"/>
+                            <constraint firstAttribute="trailing" secondItem="u7a-lL-eBH" secondAttribute="trailing" id="Y9l-NE-NMz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pY7-Jb-sWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="-252"/>
+            <point key="canvasLocation" x="-1112" y="-853"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VnB-e2-AQM">
@@ -60,12 +66,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="12" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" highlightedImage="bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-sG-KcP">
-                                <rect key="frame" x="0.0" y="-430" width="778" height="1030"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Km-8Y-tsm">
-                                <rect key="frame" x="19" y="244" width="232" height="162"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Km-8Y-tsm">
+                                <rect key="frame" x="22" y="219" width="232" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="425688546.45920402">
                                     <!--2014-06-28 22:49:06 +0000-->
@@ -76,7 +78,7 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="128862000">
                                     <!--2005-01-31 11:00:00 +0000-->
                                 </date>
-                                <locale key="locale" localeIdentifier="ar_JO"/>
+                                <locale key="locale" localeIdentifier="ar_EG"/>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
                                     <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
@@ -99,78 +101,64 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" misplaced="YES" placeholderIntrinsicWidth="261" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الرباعي" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0W-SF-CMD">
-                                <rect key="frame" x="54" y="22" width="246" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" fixedFrame="YES" placeholderIntrinsicWidth="261" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الرباعي" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0W-SF-CMD">
+                                <rect key="frame" x="37" y="31" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.050000000000000017" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="261" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="بريد الكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkV-vI-1I8">
-                                <rect key="frame" x="54" y="51" width="246" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="261" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="بريد الكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkV-vI-1I8">
+                                <rect key="frame" x="37" y="60" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL9-i0-vCM">
-                                <rect key="frame" x="69" y="437" width="151" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL9-i0-vCM">
+                                <rect key="frame" x="51" y="423" width="232" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="FQq-Y2-UbT"/>
-                                </constraints>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="تسجيل" backgroundImage="pink_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="تسجيل">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="exam1:" destination="mO7-Kz-ubQ" eventType="touchUpInside" id="5Q9-Jd-vev"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="تاريخ الميلاد" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ae-br-9TN">
-                                <rect key="frame" x="254" y="295" width="60" height="35"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ الميلاد" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ae-br-9TN">
+                                <rect key="frame" x="256" y="266" width="60" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="5Ub-Zz-6Mz"/>
-                                    <constraint firstAttribute="width" constant="60" id="LyH-2P-bB8"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="الدوله" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADy-Zt-PEb">
-                                <rect key="frame" x="249" y="147" width="51" height="35"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الدوله" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADy-Zt-PEb">
+                                <rect key="frame" x="261" y="151" width="51" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="BP0-kE-Ajp"/>
-                                    <constraint firstAttribute="height" constant="35" id="aYc-El-BAy"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="135" placeholderIntrinsicHeight="36" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-xQ-NXg">
-                                <rect key="frame" x="223" y="414" width="77" height="37"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="135" placeholderIntrinsicHeight="36" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-xQ-NXg">
+                                <rect key="frame" x="50" y="365" width="233" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.73043571220000003" green="0.38063215360000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="3X9-pK-26j"/>
-                                </constraints>
                                 <segments>
                                     <segment title="انثى"/>
                                     <segment title="ذكر"/>
                                 </segments>
                                 <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="363" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFE-Pg-tfO">
-                                <rect key="frame" x="54" y="80" width="246" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="363" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TFE-Pg-tfO">
+                                <rect key="frame" x="37" y="89" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-nq-Oxv">
-                                <rect key="frame" x="54" y="98" width="180" height="162"/>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-nq-Oxv">
+                                <rect key="frame" x="64" y="108" width="180" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="mO7-Kz-ubQ" id="e7U-HI-FRT"/>
@@ -178,33 +166,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="M0W-SF-CMD" firstAttribute="trailing" secondItem="TkV-vI-1I8" secondAttribute="trailing" id="8OO-b2-iBc"/>
-                            <constraint firstItem="M0W-SF-CMD" firstAttribute="leading" secondItem="TkV-vI-1I8" secondAttribute="leading" id="98J-hR-kid"/>
-                            <constraint firstItem="TFE-Pg-tfO" firstAttribute="top" secondItem="M0W-SF-CMD" secondAttribute="bottom" constant="28" id="D4a-8K-47i"/>
-                            <constraint firstItem="lL9-i0-vCM" firstAttribute="top" secondItem="7b0-xQ-NXg" secondAttribute="bottom" constant="18" id="EAg-m7-vwp"/>
-                            <constraint firstItem="M0W-SF-CMD" firstAttribute="leading" secondItem="KNl-E8-ckI" secondAttribute="leading" constant="49" id="Ewn-Z4-d2A"/>
-                            <constraint firstItem="0Km-8Y-tsm" firstAttribute="leading" secondItem="KNl-E8-ckI" secondAttribute="leading" constant="12" id="JMu-TN-zlZ"/>
-                            <constraint firstItem="7b0-xQ-NXg" firstAttribute="top" secondItem="0Km-8Y-tsm" secondAttribute="bottom" constant="20" id="KKH-nM-t0N"/>
-                            <constraint firstItem="9Ae-br-9TN" firstAttribute="leading" secondItem="0Km-8Y-tsm" secondAttribute="trailing" constant="4" id="Kof-FQ-E0f"/>
-                            <constraint firstItem="lL9-i0-vCM" firstAttribute="leading" secondItem="KNl-E8-ckI" secondAttribute="leading" constant="85" id="Qi7-br-2EC"/>
-                            <constraint firstItem="TFE-Pg-tfO" firstAttribute="trailing" secondItem="ADy-Zt-PEb" secondAttribute="trailing" id="RI3-qy-A5c"/>
-                            <constraint firstItem="TkV-vI-1I8" firstAttribute="top" secondItem="U6H-wP-Yee" secondAttribute="bottom" constant="52" id="TJb-Nz-sf8"/>
-                            <constraint firstAttribute="bottom" secondItem="lL9-i0-vCM" secondAttribute="bottom" constant="20" symbolic="YES" id="X6r-8J-KKs"/>
-                            <constraint firstItem="M0W-SF-CMD" firstAttribute="top" secondItem="U6H-wP-Yee" secondAttribute="bottom" constant="23" id="YbQ-lt-JKY"/>
-                            <constraint firstItem="4r7-nq-Oxv" firstAttribute="leading" secondItem="TFE-Pg-tfO" secondAttribute="leading" id="cFs-UX-SSC"/>
-                            <constraint firstItem="4r7-nq-Oxv" firstAttribute="top" secondItem="TkV-vI-1I8" secondAttribute="bottom" constant="28" id="d43-rW-Gsl"/>
-                            <constraint firstItem="9Ae-br-9TN" firstAttribute="top" secondItem="ADy-Zt-PEb" secondAttribute="bottom" constant="86" id="d7s-LH-X7d"/>
-                            <constraint firstItem="ADy-Zt-PEb" firstAttribute="top" secondItem="TFE-Pg-tfO" secondAttribute="bottom" constant="55" id="emf-Wg-Suv"/>
-                            <constraint firstItem="TkV-vI-1I8" firstAttribute="leading" secondItem="TFE-Pg-tfO" secondAttribute="leading" id="f6T-uk-ao7"/>
-                            <constraint firstItem="TkV-vI-1I8" firstAttribute="trailing" secondItem="TFE-Pg-tfO" secondAttribute="trailing" id="foq-ce-vF8"/>
-                            <constraint firstItem="ADy-Zt-PEb" firstAttribute="leading" secondItem="4r7-nq-Oxv" secondAttribute="trailing" constant="15" id="jLV-RA-9mL"/>
-                            <constraint firstItem="7b0-xQ-NXg" firstAttribute="trailing" secondItem="ADy-Zt-PEb" secondAttribute="trailing" id="kOk-XM-N4o"/>
-                            <constraint firstItem="lL9-i0-vCM" firstAttribute="centerX" secondItem="KNl-E8-ckI" secondAttribute="centerX" id="sj5-Ls-Z8O"/>
-                            <constraint firstAttribute="trailing" secondItem="9Ae-br-9TN" secondAttribute="trailing" constant="12" id="u6b-GX-BMt"/>
-                            <constraint firstAttribute="trailing" secondItem="M0W-SF-CMD" secondAttribute="trailing" constant="25" id="y0L-tF-l8v"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="birthDay" destination="0Km-8Y-tsm" id="LXz-56-X5J"/>
@@ -218,7 +180,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wge-HB-7gx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="-261"/>
+            <point key="canvasLocation" x="-181" y="-252"/>
         </scene>
         <!--Exam Type View Controller-->
         <scene sceneID="DuI-Xz-O82">
@@ -232,17 +194,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ri0-h8-M7b">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oot-aR-38J">
-                                <rect key="frame" x="73" y="156" width="193" height="64"/>
+                                <rect key="frame" x="57" y="137" width="207" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="24"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
-                                <state key="normal" title="اختبار    تحديد   الشخصيه" backgroundImage="pink_button.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="اختبار    تحديد   الشخصيه">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -250,12 +209,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-qN-5bO">
-                                <rect key="frame" x="73" y="236" width="193" height="67"/>
+                                <rect key="frame" x="57" y="233" width="207" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="25"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
-                                <state key="normal" title="اختبار  اختيار  التخصص" backgroundImage="pink_button.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="اختبار  اختيار  التخصص">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -263,12 +223,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAB-Mo-fEP">
-                                <rect key="frame" x="73" y="330" width="193" height="63"/>
+                                <rect key="frame" x="57" y="330" width="207" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="25"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
-                                <state key="normal" title="خروج" backgroundImage="pink_button.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="خروج">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -276,19 +237,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ri0-h8-M7b" secondAttribute="trailing" id="Ejy-H4-shi"/>
-                            <constraint firstAttribute="bottom" secondItem="Ri0-h8-M7b" secondAttribute="bottom" id="Pa5-2h-Y2E"/>
-                            <constraint firstItem="Ri0-h8-M7b" firstAttribute="top" secondItem="YYL-T8-0V9" secondAttribute="top" id="Wzu-Ie-xOZ"/>
-                            <constraint firstItem="Ri0-h8-M7b" firstAttribute="leading" secondItem="YYL-T8-0V9" secondAttribute="leading" id="fon-Ch-dpB"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="uq8-RT-zDt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXc-Dw-UsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="-289"/>
+            <point key="canvasLocation" x="320" y="-252"/>
         </scene>
         <!--Exam1 View Controller-->
         <scene sceneID="tRp-zq-UCH">
@@ -302,16 +257,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iQb-Jl-LLs">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="600"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="768" id="LkR-yV-pMg"/>
-                                    <constraint firstAttribute="height" constant="1024" id="dpZ-NL-wMo"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUE-PO-XJj">
-                                <rect key="frame" x="46" y="55" width="254" height="381"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUE-PO-XJj">
+                                <rect key="frame" x="18" y="34" width="293" height="461"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <string key="text">اختبار MBTI لتحديد الشخصية
 
@@ -327,20 +274,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 
 الاختبار يتكون من 38 سؤال ، اختر السؤال الذي تعتقد أنه يقارب لتفكيرك أو تصرفك في الموقف المذكور.
 </string>
-                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-V9-PKJ">
-                                <rect key="frame" x="76" y="473" width="168" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-V9-PKJ">
+                                <rect key="frame" x="76" y="513" width="190" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="aJl-dp-MHj"/>
+                                    <constraint firstAttribute="height" constant="46" id="QeL-nx-bWC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="29"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="ابدأ الاختبار" backgroundImage="pink_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="21"/>
+                                <state key="normal" title="ابدأ الاختبار">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -348,23 +295,22 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="H3V-V9-PKJ" firstAttribute="centerX" secondItem="fAj-yN-KFS" secondAttribute="centerX" id="0Xe-yL-2yk"/>
-                            <constraint firstItem="iQb-Jl-LLs" firstAttribute="top" secondItem="fAj-yN-KFS" secondAttribute="top" id="9uR-kc-rVT"/>
-                            <constraint firstItem="H3V-V9-PKJ" firstAttribute="top" secondItem="OUE-PO-XJj" secondAttribute="bottom" constant="44" id="I4m-zK-w55"/>
-                            <constraint firstAttribute="trailing" secondItem="OUE-PO-XJj" secondAttribute="trailing" constant="20" symbolic="YES" id="WVZ-xZ-LN8"/>
-                            <constraint firstItem="iQb-Jl-LLs" firstAttribute="leading" secondItem="fAj-yN-KFS" secondAttribute="leading" id="dVB-9g-DMu"/>
-                            <constraint firstItem="D0N-xC-71M" firstAttribute="top" secondItem="H3V-V9-PKJ" secondAttribute="bottom" constant="49" id="mUa-8v-YQj"/>
-                            <constraint firstItem="OUE-PO-XJj" firstAttribute="top" secondItem="m9y-Kn-aqE" secondAttribute="bottom" constant="35" id="mZB-Xo-oYZ"/>
-                            <constraint firstItem="H3V-V9-PKJ" firstAttribute="leading" secondItem="fAj-yN-KFS" secondAttribute="leading" constant="76" id="rpa-fx-FkS"/>
-                            <constraint firstItem="OUE-PO-XJj" firstAttribute="leading" secondItem="fAj-yN-KFS" secondAttribute="leading" constant="46" id="wGX-lH-xTN"/>
+                            <constraint firstAttribute="trailing" secondItem="H3V-V9-PKJ" secondAttribute="trailing" constant="54" id="CEi-dn-ZT2"/>
+                            <constraint firstItem="D0N-xC-71M" firstAttribute="top" secondItem="H3V-V9-PKJ" secondAttribute="bottom" constant="9" id="Hzq-4i-HUd"/>
+                            <constraint firstItem="H3V-V9-PKJ" firstAttribute="top" secondItem="OUE-PO-XJj" secondAttribute="bottom" constant="18" id="WeH-dm-jJI"/>
+                            <constraint firstItem="OUE-PO-XJj" firstAttribute="leading" secondItem="fAj-yN-KFS" secondAttribute="leading" constant="18" id="kVn-Cw-JbJ"/>
+                            <constraint firstItem="H3V-V9-PKJ" firstAttribute="leading" secondItem="fAj-yN-KFS" secondAttribute="leading" constant="76" id="klM-vE-wqL"/>
+                            <constraint firstAttribute="trailing" secondItem="OUE-PO-XJj" secondAttribute="trailing" constant="9" id="tSx-bY-Fd8"/>
+                            <constraint firstItem="OUE-PO-XJj" firstAttribute="top" secondItem="m9y-Kn-aqE" secondAttribute="bottom" constant="14" id="x7L-KQ-ice"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="R6h-Pz-Dq0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7t-F3-Xpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772" y="-807"/>
+            <point key="canvasLocation" x="1773" y="-906"/>
         </scene>
         <!--Exam1 Questions View Controller-->
         <scene sceneID="BzS-w0-lF0">
@@ -378,121 +324,97 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-MD-PiQ">
-                                <rect key="frame" x="258" y="124" width="59" height="191"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-MD-PiQ">
+                                <rect key="frame" x="261" y="124" width="59" height="246"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-rn-lWO">
-                                <rect key="frame" x="8" y="386" width="148" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-rn-lWO">
+                                <rect key="frame" x="20" y="363" width="129" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="27"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
                                 <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="التالي" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="التالي">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="exam1:" destination="mO7-Kz-ubQ" eventType="touchUpInside" id="mPP-KW-DET"/>
                                     <action selector="nextQuestion:" destination="3dz-e6-G8h" eventType="touchUpInside" id="HD2-SW-Obl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9c-VQ-QjC">
-                                <rect key="frame" x="164" y="386" width="148" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9c-VQ-QjC">
+                                <rect key="frame" x="170" y="363" width="128" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="148" id="gDP-Cx-xmK"/>
-                                    <constraint firstAttribute="height" constant="42" id="yD5-4T-zc0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="27"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
                                 <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="السابق" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="السابق">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnBack:" destination="3dz-e6-G8h" eventType="touchUpInside" id="KSF-Ts-GnH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-s7-fpW">
-                                <rect key="frame" x="86" y="436" width="148" height="41"/>
+                                <rect key="frame" x="32" y="437" width="247" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="27"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
                                 <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="الصفحه الرئيسيه" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="الصفحه الرئيسيه">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="bRl-fk-VFL" kind="modal" id="ZNB-Hq-M75"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WER" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="215" translatesAutoresizingMaskIntoConstraints="NO" id="D0A-DN-ned">
-                                <rect key="frame" x="38" y="250" width="215" height="77"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WER" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="D0A-DN-ned">
+                                <rect key="frame" x="20" y="204" width="237" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="Jml-2V-jlU"/>
-                                    <constraint firstAttribute="width" constant="215" id="z8B-GO-fCp"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="226" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-x0-xLm">
-                                <rect key="frame" x="27" y="130" width="226" height="77"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AD" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-x0-xLm">
+                                <rect key="frame" x="20" y="122" width="237" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="IR8-pW-lGF"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-4P-UXS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-4P-UXS">
                                 <rect key="frame" x="20" y="47" width="179" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="0M9-pm-Vse"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السؤال رقم :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUf-yZ-tkC">
-                                <rect key="frame" x="196" y="44" width="94" height="26"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السؤال رقم :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUf-yZ-tkC">
+                                <rect key="frame" x="196" y="24" width="94" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="lvi-ob-9iY"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-aZ-cBN">
-                                <rect key="frame" x="27" y="289" width="266" height="38"/>
+                                <rect key="frame" x="17" y="197" width="266" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qy2-ye-mGw">
+                                <rect key="frame" x="20" y="56" width="280" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96470588239999999" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="ycS-YO-8LL"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cZo-MD-PiQ" firstAttribute="leading" secondItem="c5d-x0-xLm" secondAttribute="trailing" constant="8" symbolic="YES" id="2Df-1B-dCj"/>
-                            <constraint firstItem="D0A-DN-ned" firstAttribute="top" secondItem="c5d-x0-xLm" secondAttribute="bottom" constant="43" id="3SE-dg-EsA"/>
-                            <constraint firstItem="c5d-x0-xLm" firstAttribute="top" secondItem="0ex-4P-UXS" secondAttribute="bottom" constant="57" id="BWO-aj-IPa"/>
-                            <constraint firstItem="7g6-rn-lWO" firstAttribute="bottom" secondItem="E9c-VQ-QjC" secondAttribute="bottom" id="FAz-ay-e8V"/>
-                            <constraint firstItem="7g6-rn-lWO" firstAttribute="leading" secondItem="TPf-Ix-anK" secondAttribute="leading" constant="8" id="FHd-5o-eAv"/>
-                            <constraint firstItem="cZo-MD-PiQ" firstAttribute="leading" secondItem="D0A-DN-ned" secondAttribute="trailing" constant="8" symbolic="YES" id="GEX-L6-dvv"/>
-                            <constraint firstItem="WUf-yZ-tkC" firstAttribute="top" secondItem="Uj4-B4-Lak" secondAttribute="bottom" constant="24" id="HLs-3h-0Nr"/>
-                            <constraint firstAttribute="trailing" secondItem="E9c-VQ-QjC" secondAttribute="trailing" constant="8" id="IYe-jK-J50"/>
-                            <constraint firstItem="cZo-MD-PiQ" firstAttribute="top" secondItem="WUf-yZ-tkC" secondAttribute="bottom" constant="54" id="Ig0-Cr-1Qb"/>
-                            <constraint firstItem="7g6-rn-lWO" firstAttribute="top" secondItem="E9c-VQ-QjC" secondAttribute="top" id="Jx0-af-Zzz"/>
-                            <constraint firstItem="D0A-DN-ned" firstAttribute="leading" secondItem="TPf-Ix-anK" secondAttribute="leading" constant="38" id="L87-X6-iU1"/>
-                            <constraint firstItem="c5d-x0-xLm" firstAttribute="leading" secondItem="TPf-Ix-anK" secondAttribute="leading" constant="27" id="Wgo-46-ReT"/>
-                            <constraint firstItem="0ex-4P-UXS" firstAttribute="leading" secondItem="TPf-Ix-anK" secondAttribute="leading" constant="20" symbolic="YES" id="Yjn-wR-l0W"/>
-                            <constraint firstItem="E9c-VQ-QjC" firstAttribute="top" secondItem="D0A-DN-ned" secondAttribute="bottom" constant="59" id="Yzx-AU-68m"/>
-                            <constraint firstItem="E9c-VQ-QjC" firstAttribute="leading" secondItem="7g6-rn-lWO" secondAttribute="trailing" constant="8" symbolic="YES" id="b2t-D4-dKD"/>
-                            <constraint firstItem="E9c-VQ-QjC" firstAttribute="top" secondItem="cZo-MD-PiQ" secondAttribute="bottom" constant="71" id="hSc-nc-TSz"/>
-                            <constraint firstAttribute="trailing" secondItem="WUf-yZ-tkC" secondAttribute="trailing" constant="30" id="lB4-h0-paV"/>
-                            <constraint firstItem="0ex-4P-UXS" firstAttribute="top" secondItem="Uj4-B4-Lak" secondAttribute="bottom" constant="27" id="qBN-3L-ppV"/>
-                            <constraint firstAttribute="trailing" secondItem="cZo-MD-PiQ" secondAttribute="trailing" id="sdP-gp-ijs"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="BtnNext" destination="7g6-rn-lWO" id="CKO-cE-sl5"/>
@@ -501,6 +423,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="QuestionNumber" destination="0ex-4P-UXS" id="hge-Zi-iXl"/>
                         <outlet property="fbtnBack" destination="E9c-VQ-QjC" id="Jpy-ol-YVi"/>
                         <outlet property="label" destination="WUf-yZ-tkC" id="hqb-87-Cpg"/>
+                        <outlet property="prorgressBar" destination="qy2-ye-mGw" id="cfO-rb-EKw"/>
                         <outlet property="radioView" destination="cZo-MD-PiQ" id="0Q9-6k-BL1"/>
                         <outlet property="thankMessage" destination="3CG-aZ-cBN" id="kXg-Q0-Ysd"/>
                         <segue destination="iLg-M4-B4u" kind="modal" identifier="result_exam1" id="Woc-5k-L1c"/>
@@ -508,7 +431,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6V-5U-EK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2766" y="-773"/>
+            <point key="canvasLocation" x="2786" y="-761"/>
         </scene>
         <!--Result Exam1 View Controller-->
         <scene sceneID="MiM-Ee-J0B">
@@ -522,32 +445,34 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMl-q2-5pB">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMl-q2-5pB">
                                 <rect key="frame" x="0.0" y="47" width="320" height="467"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="465" id="0CH-nB-BJ1"/>
-                                </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Tb-jk-CiF">
-                                <rect key="frame" x="87" y="517" width="147" height="43"/>
+                                <rect key="frame" x="0.0" y="516" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="CY3-5e-rja"/>
+                                    <constraint firstAttribute="height" constant="52" id="svJ-a8-827"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="21"/>
                                 <size key="titleShadowOffset" width="10" height="7"/>
-                                <state key="normal" title="الصفحه الرئيسيه" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="الصفحه الرئيسيه">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="bRl-fk-VFL" kind="modal" id="vob-tz-1N4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-me-t2H">
-                                <rect key="frame" x="287" y="20" width="33" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-me-t2H">
+                                <rect key="frame" x="286" y="20" width="33" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="G5J-ON-0iN"/>
+                                    <constraint firstAttribute="height" constant="27" id="Ume-q7-g3W"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="print.png"/>
                                 <connections>
                                     <action selector="printButton:" destination="iLg-M4-B4u" eventType="touchUpInside" id="Rul-X7-dpl"/>
@@ -556,12 +481,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1gU-uB-Sfh" firstAttribute="top" secondItem="5Tb-jk-CiF" secondAttribute="bottom" constant="8" id="1Kg-rt-nqa"/>
-                            <constraint firstItem="YMl-q2-5pB" firstAttribute="leading" secondItem="xCv-IQ-Cey" secondAttribute="leading" id="Cii-tR-IjS"/>
-                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="leading" secondItem="xCv-IQ-Cey" secondAttribute="leading" constant="87" id="IBM-0I-y6S"/>
-                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="centerX" secondItem="YMl-q2-5pB" secondAttribute="centerX" id="IZ0-Vp-gFx"/>
-                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="top" secondItem="YMl-q2-5pB" secondAttribute="bottom" constant="2" id="pRU-Zh-OH6"/>
-                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="centerX" secondItem="xCv-IQ-Cey" secondAttribute="centerX" id="xJO-Lz-1JV"/>
+                            <constraint firstItem="YMl-q2-5pB" firstAttribute="trailing" secondItem="5Tb-jk-CiF" secondAttribute="trailing" id="5GY-SY-Vyx"/>
+                            <constraint firstItem="YMl-q2-5pB" firstAttribute="top" secondItem="rOb-me-t2H" secondAttribute="bottom" id="75c-5N-lBa"/>
+                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="leading" secondItem="YMl-q2-5pB" secondAttribute="leading" id="Mzr-PA-m7v"/>
+                            <constraint firstAttribute="trailing" secondItem="YMl-q2-5pB" secondAttribute="trailing" id="gLy-Dl-qu5"/>
+                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="leading" secondItem="xCv-IQ-Cey" secondAttribute="leading" id="jFX-gP-bWp"/>
+                            <constraint firstAttribute="trailing" secondItem="rOb-me-t2H" secondAttribute="trailing" constant="1" id="jhw-SL-AQE"/>
+                            <constraint firstAttribute="bottom" secondItem="5Tb-jk-CiF" secondAttribute="bottom" id="n54-sr-0tP"/>
+                            <constraint firstItem="5Tb-jk-CiF" firstAttribute="top" secondItem="YMl-q2-5pB" secondAttribute="bottom" constant="2" id="oDy-sI-K79"/>
+                            <constraint firstItem="rOb-me-t2H" firstAttribute="top" secondItem="xCv-IQ-Cey" secondAttribute="top" constant="20" symbolic="YES" id="r3U-Cz-cqE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -584,11 +512,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3e3-fX-ivW">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-1g-Eq2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-1g-Eq2">
                                 <rect key="frame" x="50" y="52" width="238" height="335"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -596,35 +520,27 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 
 وضع هذا الاختبار للكشف عن استعداداتك وهو مؤشر يستند عليه لتحديد التخصص الأنسب لك، لذا نأمل منك الإجابة على ما سيرد بكل صدق ودقة حتى نتمكن من الوصول لنتيجة تصب في مصلحتك. وتذكر.... أنه لا يوجد إجابة صحيحة وأخرى خاطئة!</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI5-9J-Ooq">
-                                <rect key="frame" x="79" y="458" width="163" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI5-9J-Ooq">
+                                <rect key="frame" x="64" y="314" width="192" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="U5n-17-CCZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="29"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="ابدأ الاختبار" backgroundImage="pink_button.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="21"/>
+                                <state key="normal" title="ابدأ الاختبار">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="egq-rq-e9y" kind="modal" id="f2C-z7-JvR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DpY-1g-Eq2" secondAttribute="trailing" constant="32" id="9mX-d7-lbj"/>
-                            <constraint firstItem="NI5-9J-Ooq" firstAttribute="top" secondItem="DpY-1g-Eq2" secondAttribute="bottom" constant="71" id="Qeq-4V-lkS"/>
                             <constraint firstItem="DpY-1g-Eq2" firstAttribute="leading" secondItem="H1y-6D-iRI" secondAttribute="leading" constant="50" id="ZYX-r9-Lat"/>
-                            <constraint firstItem="dJZ-Uc-KqO" firstAttribute="top" secondItem="NI5-9J-Ooq" secondAttribute="bottom" constant="65" id="dXb-8I-z8K"/>
                             <constraint firstItem="DpY-1g-Eq2" firstAttribute="top" secondItem="jvW-rr-s7A" secondAttribute="bottom" constant="32" id="i9J-yo-Sfd"/>
-                            <constraint firstItem="NI5-9J-Ooq" firstAttribute="leading" secondItem="H1y-6D-iRI" secondAttribute="leading" constant="79" id="oIT-2s-amk"/>
-                            <constraint firstItem="NI5-9J-Ooq" firstAttribute="centerX" secondItem="H1y-6D-iRI" secondAttribute="centerX" id="sir-Ok-3wP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VHr-mw-waL"/>
@@ -647,17 +563,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KI-H9-MWG">
-                                <rect key="frame" x="246" y="141" width="65" height="241"/>
+                                <rect key="frame" x="241" y="143" width="79" height="255"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="742" verticalCompressionResistancePriority="736" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-am-KYq">
-                                <rect key="frame" x="4" y="390" width="154" height="36"/>
+                                <rect key="frame" x="20" y="369" width="128" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="24"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="التالي" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
+                                <state key="normal" title="التالي">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="exam1:" destination="mO7-Kz-ubQ" eventType="touchUpInside" id="EUU-KU-wta"/>
@@ -665,26 +580,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="742" verticalCompressionResistancePriority="736" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0l-oJ-rDc">
-                                <rect key="frame" x="162" y="390" width="154" height="36"/>
+                                <rect key="frame" x="174" y="369" width="128" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="24"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="السابق" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
+                                <state key="normal" title="السابق">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnBack:" destination="egq-rq-e9y" eventType="touchUpInside" id="Uuc-aI-d2M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZf-H7-NJd">
-                                <rect key="frame" x="83" y="434" width="154" height="34"/>
+                                <rect key="frame" x="76" y="437" width="169" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
-                                <state key="normal" title="الصفحه الرئيسيه" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
+                                <state key="normal" title="الصفحه الرئيسيه">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="exam1:" destination="mO7-Kz-ubQ" eventType="touchUpInside" id="QOX-Ac-PyP"/>
@@ -692,60 +605,74 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="291" translatesAutoresizingMaskIntoConstraints="NO" id="cNc-Cr-vlT">
-                                <rect key="frame" x="20" y="54" width="291" height="88"/>
+                                <rect key="frame" x="20" y="59" width="291" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تنطبق أحيانا " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-qp-Xny">
-                                <rect key="frame" x="36" y="156" width="201" height="30"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-Or-MUZ">
+                                <rect key="frame" x="36" y="38" width="266" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.93333333330000001" green="0.3294117647" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="0FD-C4-pam"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تنطبق أحيانا " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-qp-Xny">
+                                <rect key="frame" x="40" y="150" width="201" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تنطبق دائما " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHm-lY-tXU">
-                                <rect key="frame" x="44" y="209" width="193" height="26"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تنطبق دائما " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHm-lY-tXU">
+                                <rect key="frame" x="40" y="206" width="201" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لا تنطبق عليٌ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6v-tA-d6b">
-                                <rect key="frame" x="44" y="260" width="193" height="29"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لا تنطبق عليٌ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6v-tA-d6b">
+                                <rect key="frame" x="40" y="261" width="202" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-h0-w39">
-                                <rect key="frame" x="28" y="341" width="265" height="35"/>
+                                <rect key="frame" x="28" y="201" width="265" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السؤال رقم :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-lb-ZMd">
-                                <rect key="frame" x="226" y="30" width="85" height="21"/>
+                                <rect key="frame" x="227" y="14" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="24"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="033-fr-PnS">
-                                <rect key="frame" x="49" y="28" width="176" height="26"/>
+                                <rect key="frame" x="52" y="14" width="176" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="BtnNext" destination="hdg-am-KYq" id="w3A-K7-nda"/>
@@ -756,6 +683,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="QuestionNumber" destination="033-fr-PnS" id="KtT-d8-nyJ"/>
                         <outlet property="fbtnBack" destination="m0l-oJ-rDc" id="aOX-mV-xsQ"/>
                         <outlet property="label1" destination="d3n-lb-ZMd" id="Fqa-A3-zG2"/>
+                        <outlet property="progressBar" destination="WD4-Or-MUZ" id="KoN-Is-9lb"/>
                         <outlet property="radioView" destination="2KI-H9-MWG" id="bjY-OM-jva"/>
                         <outlet property="thankMessage" destination="RBb-h0-w39" id="pxS-St-CJe"/>
                         <segue destination="5ea-xs-TU2" kind="modal" identifier="result_exam2" id="TiR-Do-QXN"/>
@@ -777,24 +705,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-Q8-hyP">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-Q8-hyP">
                                 <rect key="frame" x="0.0" y="47" width="320" height="467"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="465" id="1m0-UR-Fj6"/>
+                                    <constraint firstAttribute="height" constant="467" id="ubr-ql-NIC"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRI-0a-Dad">
-                                <rect key="frame" x="87" y="517" width="147" height="43"/>
+                                <rect key="frame" x="0.0" y="516" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="PQX-QI-kV5"/>
+                                    <constraint firstAttribute="height" constant="52" id="8jr-ys-qd6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="21"/>
-                                <size key="titleShadowOffset" width="10" height="7"/>
-                                <state key="normal" title="الصفحه الرئيسيه" backgroundImage="ic_btn.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="الصفحه الرئيسيه">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="bRl-fk-VFL" kind="modal" id="B3q-bh-OY3"/>
@@ -811,12 +739,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bmf-AG-Fnu" firstAttribute="top" secondItem="uRI-0a-Dad" secondAttribute="bottom" constant="8" id="5Ml-wr-ZWG"/>
-                            <constraint firstItem="uRI-0a-Dad" firstAttribute="leading" secondItem="gE2-ze-NJY" secondAttribute="leading" constant="87" id="DlZ-xv-3IY"/>
-                            <constraint firstItem="uRI-0a-Dad" firstAttribute="centerX" secondItem="gE2-ze-NJY" secondAttribute="centerX" id="g1i-B5-bko"/>
-                            <constraint firstItem="dSJ-Q8-hyP" firstAttribute="leading" secondItem="gE2-ze-NJY" secondAttribute="leading" id="nOZ-JZ-csN"/>
-                            <constraint firstItem="uRI-0a-Dad" firstAttribute="top" secondItem="dSJ-Q8-hyP" secondAttribute="bottom" constant="2" id="nzC-Fz-cfG"/>
-                            <constraint firstItem="uRI-0a-Dad" firstAttribute="centerX" secondItem="dSJ-Q8-hyP" secondAttribute="centerX" id="xxU-3n-WDH"/>
+                            <constraint firstItem="uRI-0a-Dad" firstAttribute="leading" secondItem="gE2-ze-NJY" secondAttribute="leading" id="1Gg-Pd-BUf"/>
+                            <constraint firstAttribute="bottom" secondItem="uRI-0a-Dad" secondAttribute="bottom" id="BhT-GG-sI0"/>
+                            <constraint firstItem="uRI-0a-Dad" firstAttribute="top" secondItem="dSJ-Q8-hyP" secondAttribute="bottom" constant="2" id="ELE-c5-PWT"/>
+                            <constraint firstAttribute="trailing" secondItem="uRI-0a-Dad" secondAttribute="trailing" id="Uho-8r-LNc"/>
+                            <constraint firstItem="dSJ-Q8-hyP" firstAttribute="trailing" secondItem="uRI-0a-Dad" secondAttribute="trailing" id="Vtr-Gb-oQF"/>
+                            <constraint firstItem="dSJ-Q8-hyP" firstAttribute="leading" secondItem="uRI-0a-Dad" secondAttribute="leading" id="sVZ-gr-k1i"/>
                         </constraints>
                     </view>
                     <connections>
@@ -829,10 +757,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="Blurry-blue-background-iphone-5-wallpaper-ilikewallpaper_com.jpg" width="640" height="1136"/>
-        <image name="bg2.png" width="2048" height="2048"/>
-        <image name="ic_btn.png" width="600" height="192"/>
-        <image name="pink_button.png" width="800" height="413"/>
+        <image name="5-Background-thinking-head-creative-transparent.png" width="273" height="431"/>
         <image name="print.png" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -841,6 +766,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8vW-xC-Yin"/>
+        <segue reference="ZNB-Hq-M75"/>
     </inferredMetricsTieBreakers>
 </document>
