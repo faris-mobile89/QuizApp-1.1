@@ -87,5 +87,5 @@ MIT
 **Free Software, Yallah!**
 
    [Moya]: <https://github.com/Moya/Moya>
-   [PromiseKit]: <(https://github.com/mxcl/PromiseKit>
+   [PromiseKit]: <https://github.com/mxcl/PromiseKit>
    [SnapKit]: <https://github.com/SnapKit/SnapKit>
